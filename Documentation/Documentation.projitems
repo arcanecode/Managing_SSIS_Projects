@@ -13,5 +13,6 @@
     <None Include="$(MSBuildThisFileDirectory)CourseOutline.md" />
     <None Include="$(MSBuildThisFileDirectory)MarkdownCheatSheet.md" />
     <None Include="$(MSBuildThisFileDirectory)ReadMe.md" />
+    <None Include="$(MSBuildThisFileDirectory)ToolsRequired.md" />
   </ItemGroup>
 </Project>
