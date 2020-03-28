@@ -2,8 +2,6 @@
 
 This project contains various documenation for this demo project. It is part of the course "Managing SSIS Projects, on Pluralsight. 
 
-Please see the Documentation folder for more information.
-
 ## Author Information
 
 ### Author
