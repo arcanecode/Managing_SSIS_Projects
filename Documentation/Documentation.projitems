@@ -11,6 +11,8 @@
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)AboutMe.md" />
     <None Include="$(MSBuildThisFileDirectory)CourseOutline.md" />
+    <None Include="$(MSBuildThisFileDirectory)DemoSteps.md" />
+    <None Include="$(MSBuildThisFileDirectory)DemoSteps_M03_Creating_and_Managing_The_Catalog.md" />
     <None Include="$(MSBuildThisFileDirectory)MarkdownCheatSheet.md" />
     <None Include="$(MSBuildThisFileDirectory)ReadMe.md" />
     <None Include="$(MSBuildThisFileDirectory)ToolsRequired.md" />

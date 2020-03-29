@@ -56,6 +56,29 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="Tables" />
+    <Folder Include="Security" />
+    <Folder Include="Application" />
+    <Folder Include="Application\Tables" />
+    <Folder Include="PostDeploymentScripts" />
+    <Folder Include="Sequences" />
+    <Folder Include="DataLoadSimulation" />
+    <Folder Include="DataLoadSimulation\Stored Procedures" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Security\Application.sql" />
+    <Build Include="Application\Tables\People.sql" />
+    <Build Include="Application\Tables\People_Archive.sql" />
+    <Build Include="Sequences\PersonID.sql" />
+    <Build Include="Security\Sequences.sql" />
+    <Build Include="Security\DataLoadSimulation.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PostDeploymentScripts\pds100-ins-app-people.sql" />
+    <None Include="SourceDB.publish.xml" />
+    <Build Include="DataLoadSimulation\Stored Procedures\DeactivateTemporalTablesBeforeDataLoad.sql" />
+    <Build Include="DataLoadSimulation\Stored Procedures\ReactivateTemporalTablesAfterDataLoad.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="PostDeploymentScripts\Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>

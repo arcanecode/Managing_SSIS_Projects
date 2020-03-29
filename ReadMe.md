@@ -2,7 +2,7 @@
 
 This project contains various documenation for this demo project. It is part of the course "Managing SSIS Projects, on Pluralsight. 
 
-Please see the Documentation folder for more information.
+Please see the [Read Me](Documentation/ReadMe.md) file in the Documentation folder for more information.
 
 ## Author Information
 
@@ -13,6 +13,7 @@ Robert C. Cain | @ArcaneCode | arcanecode@gmail.com
 ### Websites
 
 Main Site: [http://arcanecode.me](http://arcanecode.me)
+
 Github: [http://arcanecode.gallery](http://arcanecode.gallery)
 
 ### Copyright Notice

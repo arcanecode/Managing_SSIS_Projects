@@ -2,6 +2,18 @@
 
 This project contains various documenation for this demo project. It is part of the course "Managing SSIS Projects, on Pluralsight. 
 
+The Documenatation folder includes the following files.
+
+[Course Outline](CourseOutline.md) - An overview and outline of the modules found in the course.
+
+[Demo Steps](DemoSteps.md) - A key to the steps needed to recreate the demos as seen in the video.
+
+[Tools Required](ToolsRequired.md) - A listing of all the programs and tools used in the creation of the demos for this video.
+
+[Markdown Cheat Sheet](MarkdownCheatSheet.md) - A quick reference "cheat sheet" for writing markdown documents.
+
+[About Me](AboutMe.md) - More information about your humble course author, including a list to other Pluralsight courses he created.
+
 ## Author Information
 
 ### Author
