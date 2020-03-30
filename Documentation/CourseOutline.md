@@ -22,9 +22,9 @@ This module isn't part of the actual course. It is the overview trailer you like
 
 ### Demo Description
 
-This module has no demos.
+Learners will see an overview of the demo project.
 
-Target Time: 05:00
+Target Time: 10:00
 
 ## Module 3 - Creating and Managing the Catalog
 
@@ -40,44 +40,7 @@ The demo will show how to create the SSIS Catalog on a server. Students will the
 
 Target Time: 10:00
 
-## Module 4 - Using the Catalog for Logging
-
-### Learning Objectives
-
-* Learning about automatic logging
-* Learn how to query the catalog for log data
-
-### Demo Description
-
-The demo will start by executing a package and learn that logging is automatic. Students will then be taken to the catalog, where they will be shown how to query the log tables for useful information.
-
-Target Time: 10:00
-
-## Module 5 - Developing Custom Logging 
-
-### Learning Objectives
-
-* Learn to use custom script tasks for logging
-
-### Demo Description
-
-In this demo students will see how to use script tasks in order to perform custom logging actions. They will then see how to query their own custom logs.
-
-Target Time: 15:00
-
-## Module 6 - Using Canned Dashboard Reports 
-
-### Learning Objectives
-
-* Learn the dashboard reports built into SSIS.
-
-### Demo Description
-
-In this demo, students will learn how to locate and execute the dashboard reports that are built into SSIS.
-
-Target Time: 10:00
-
-## Module 7 - Deploying to the Catalog 
+## Module 4 - Deploying to the Catalog 
 
 ### Learning Objectives
 
@@ -89,7 +52,19 @@ Students will deploy their project to the SSIS Catalog. They will then go to the
 
 Target Time: 10:00
 
-## Module 8 -Configuring a Project or Package 
+## Module 5 - Using Canned Dashboard Reports 
+
+### Learning Objectives
+
+* Learn the dashboard reports built into SSIS.
+
+### Demo Description
+
+In this demo, students will learn how to locate and execute the dashboard reports that are built into SSIS.
+
+Target Time: 10:00
+
+## Module 6 -Configuring a Project or Package 
 
 ### Learning Objectives
 
@@ -103,7 +78,7 @@ Students will see how to configure a package in the catalog. They will set a var
 
 Target Time: 10:00
 
-## Module 9 - Using Environments 
+## Module 7 - Using Environments 
 
 ### Learning Objectives
 
@@ -114,6 +89,31 @@ Target Time: 10:00
 In this demo, students will see how to setup multiple environments, then see the results of executing a package project under different environments. 
 
 Target Time: 10:00
+
+## Module 8 - Using the Catalog for Logging
+
+### Learning Objectives
+
+* Learning about automatic logging
+* Learn how to query the catalog for log data
+
+### Demo Description
+
+The demo will start by executing a package and learn that logging is automatic. Students will then be taken to the catalog, where they will be shown how to query the log tables for useful information.
+
+Target Time: 10:00
+
+## Module 9 - Developing Custom Logging 
+
+### Learning Objectives
+
+* Learn to use custom script tasks for logging
+
+### Demo Description
+
+In this demo students will see how to use script tasks in order to perform custom logging actions. They will then see how to query their own custom logs.
+
+Target Time: 15:00
 
 ## Module 10 - Creating an SSIS Package Template for Re-use 
 

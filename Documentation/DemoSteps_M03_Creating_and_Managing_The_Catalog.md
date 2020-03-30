@@ -1,7 +1,6 @@
-﻿
-## Module 3 - Creating and Managing the Catalog
+﻿# Module 3 - Creating and Managing the Catalog
 
-### Demo 1 - Creating the Catalog
+## Demo 1 - Creating the Catalog
 
 1. Open SSMS. Connect to your localhost (or the name of your server).
 2. In the object explorer locate the branch that reads *Integration Services Catalogs*.
@@ -14,7 +13,7 @@
 9. Enter, then retype a password. *Make sure you write this down, or save it in your password manager!*
 10 Accept the remaining defaults, and click the OK button.
 
-### Demo 2 - Backup the SSISDB
+## Demo 2 - Backup the SSISDB
 
 Prior to doing this, you will:
 1. Need to launch SSMS in Admin mode
@@ -48,7 +47,7 @@ WITH NOFORMAT
 GO
 ```
 
-### Demo 3 - Backup the encryption key
+## Demo 3 - Backup the encryption key
 
 After backing up the database, you will also need to backup the encryption key. The key is used to encrypt things like connection strings. When you restore the SSIS database, if you don't also restore the encryption keys you will be forced to re-setup all the connection strings, passwords, and other sensitive informaiton.
 
@@ -63,7 +62,7 @@ BACKUP MASTER KEY TO FILE = 'c:\temp\DemoTestKey'
 GO
 ```
 
-### Demo 4 - Restore
+## Demo 4 - Restore
 
 To restore a SSISDB to a server where an SSIS catalog had already been created, restore the database normally. 
 

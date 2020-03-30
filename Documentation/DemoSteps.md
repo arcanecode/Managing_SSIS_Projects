@@ -7,3 +7,5 @@ These are used as a reminder of the steps that need to be done during the filmin
 However, we have included these in the documenation as they may aid in stimulating your memory as you manage your own SSIS Projects.
 
 [Module 3 - Creating and Managing the Catalog](DemoSteps_M03_Creating_and_Managing_The_Catalog.md)
+
+[Module 4 - Deploying to the Catalog](DemoSteps_M04_Deploying to the Catalog.md)
