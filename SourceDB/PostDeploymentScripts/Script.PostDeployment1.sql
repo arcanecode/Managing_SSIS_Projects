@@ -16,6 +16,10 @@ EXEC DataLoadSimulation.DeactivateTemporalTablesBeforeDataLoad;
 GO
 
 :r .\pds100-ins-app-people.sql
+:r .\pds110-ins-app-countries.sql
+:r .\pds140-ins-app-stateprovinces.sql
+:r .\pds142-upd-app-stateprovinces-borders.sql
+:r .\pds150-ins-app-cities.sql
 
 PRINT 'Data Load Simulation: Reactivate Temporal Tables after Data Load'
 GO

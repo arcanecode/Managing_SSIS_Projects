@@ -5,10 +5,12 @@ AS BEGIN
     SET NOCOUNT ON;
  
     -- For the Managing SSIS Projects course, we're not using this so it'll just skip this line
+    /*
     IF EXISTS (SELECT 1 FROM sys.procedures WHERE name = N'Configuration_RemoveRowLevelSecurity')
     BEGIN
         EXEC [Application].Configuration_RemoveRowLevelSecurity;
     END;
+    */
  
     DECLARE @SQL nvarchar(max) = N'';
     DECLARE @CrLf nvarchar(2) = NCHAR(13) + NCHAR(10);
@@ -23,13 +25,13 @@ AS BEGIN
     DECLARE @TemporalTableSuffix nvarchar(max) = N'Archive';
     DECLARE @LastEditedByColumnName sysname;
  
- /*
     ALTER TABLE [Application].[Cities] SET (SYSTEM_VERSIONING = OFF);
     ALTER TABLE [Application].[Cities] DROP PERIOD FOR SYSTEM_TIME;
  
     ALTER TABLE [Application].[Countries] SET (SYSTEM_VERSIONING = OFF);
     ALTER TABLE [Application].[Countries] DROP PERIOD FOR SYSTEM_TIME;
  
+/*
     ALTER TABLE [Application].[DeliveryMethods] SET (SYSTEM_VERSIONING = OFF);
     ALTER TABLE [Application].[DeliveryMethods] DROP PERIOD FOR SYSTEM_TIME;
  
@@ -40,10 +42,10 @@ AS BEGIN
     ALTER TABLE [Application].[People] SET (SYSTEM_VERSIONING = OFF);
     ALTER TABLE [Application].[People] DROP PERIOD FOR SYSTEM_TIME;
  
-/*
     ALTER TABLE [Application].[StateProvinces] SET (SYSTEM_VERSIONING = OFF);
     ALTER TABLE [Application].[StateProvinces] DROP PERIOD FOR SYSTEM_TIME;
  
+/*
     ALTER TABLE [Application].[TransactionTypes] SET (SYSTEM_VERSIONING = OFF);
     ALTER TABLE [Application].[TransactionTypes] DROP PERIOD FOR SYSTEM_TIME;
  

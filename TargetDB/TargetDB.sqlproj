@@ -60,15 +60,42 @@
     <Folder Include="Security" />
     <Folder Include="Sequences" />
     <Folder Include="Sequences\Sequences" />
+    <Folder Include="App" />
+    <Folder Include="App\Table" />
+    <Folder Include="Dimension\Tables" />
+    <Folder Include="App\Stored Procedures" />
+    <Folder Include="App\Views" />
+    <Folder Include="App\Functions" />
+    <Folder Include="PostDeploymentScripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Application.sql" />
     <Build Include="Security\Dimension.sql" />
     <Build Include="Security\Sequences.sql" />
     <Build Include="Sequences\Sequences\Employee.sql" />
-    <Build Include="Dimension\Employee.sql" />
+    <Build Include="Sequences\Sequences\CityKey.sql" />
+    <Build Include="Security\Integration.sql" />
+    <Build Include="Dimension\Tables\City.sql" />
+    <Build Include="Dimension\Tables\Employee.sql" />
+    <Build Include="App\Table\PackageLogger.sql" />
+    <Build Include="App\Table\PackageRunner.sql" />
+    <Build Include="App\Table\DebugLog.sql" />
+    <Build Include="Security\App.sql" />
+    <Build Include="App\Stored Procedures\PackageRunnerInitialLoad.sql" />
+    <Build Include="App\Stored Procedures\LogMessage.sql" />
+    <Build Include="App\Stored Procedures\ShowDebugLog.sql" />
+    <Build Include="App\Views\PackageLogInProgress.sql" />
+    <Build Include="App\Views\PackageLogMasterRuns.sql" />
+    <Build Include="App\Functions\ElapsedTimeText.sql" />
+    <Build Include="App\Functions\ElapsedTimeTextCompact.sql" />
+    <Build Include="App\Views\PackageLogMasterRunsToday.sql" />
+    <Build Include="App\Views\PackageLogToday.sql" />
+    <Build Include="App\Functions\ElapsedTimeCompact.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TargetDB_Dev.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="PostDeploymentScripts\Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>

@@ -63,6 +63,9 @@
     <Folder Include="Sequences" />
     <Folder Include="DataLoadSimulation" />
     <Folder Include="DataLoadSimulation\Stored Procedures" />
+    <Folder Include="DataLoadSimulation\Functions" />
+    <Folder Include="Integration" />
+    <Folder Include="Integration\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Application.sql" />
@@ -71,12 +74,28 @@
     <Build Include="Sequences\PersonID.sql" />
     <Build Include="Security\Sequences.sql" />
     <Build Include="Security\DataLoadSimulation.sql" />
+    <Build Include="Application\Tables\Cities.sql" />
+    <Build Include="Application\Tables\StateProvinces.sql" />
+    <Build Include="Application\Tables\StateProvinces_Archive.sql" />
+    <Build Include="Application\Tables\Countries.sql" />
+    <Build Include="Application\Tables\Countries_Archive.sql" />
+    <Build Include="Sequences\CityID.sql" />
+    <Build Include="Sequences\CountryID.sql" />
+    <Build Include="Sequences\StateProvinceID.sql" />
+    <Build Include="DataLoadSimulation\Functions\GetStateProvinceID.sql" />
+    <Build Include="DataLoadSimulation\Functions\GetCityLocation.sql" />
+    <Build Include="Integration\Stored Procedures\GetCityUpdates.sql" />
+    <Build Include="Security\Integration.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PostDeploymentScripts\pds100-ins-app-people.sql" />
     <None Include="SourceDB.publish.xml" />
     <Build Include="DataLoadSimulation\Stored Procedures\DeactivateTemporalTablesBeforeDataLoad.sql" />
     <Build Include="DataLoadSimulation\Stored Procedures\ReactivateTemporalTablesAfterDataLoad.sql" />
+    <None Include="PostDeploymentScripts\pds110-ins-app-countries.sql" />
+    <None Include="PostDeploymentScripts\pds140-ins-app-stateprovinces.sql" />
+    <None Include="PostDeploymentScripts\pds142-upd-app-stateprovinces-borders.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="PostDeploymentScripts\Script.PostDeployment1.sql" />
