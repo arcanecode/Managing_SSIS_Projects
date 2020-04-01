@@ -66,6 +66,7 @@
     <Folder Include="DataLoadSimulation\Functions" />
     <Folder Include="Integration" />
     <Folder Include="Integration\Stored Procedures" />
+    <Folder Include="Integration\Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Application.sql" />
@@ -86,6 +87,34 @@
     <Build Include="DataLoadSimulation\Functions\GetCityLocation.sql" />
     <Build Include="Integration\Stored Procedures\GetCityUpdates.sql" />
     <Build Include="Security\Integration.sql" />
+    <Build Include="Integration\Tables\CityChanges.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-a.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-b.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-c.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-d.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-e.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-f.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-g.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-h.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-i.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-j.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-k.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-l.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-m.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-n.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-o.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-p.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-q.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-r.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-s.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-t.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-u.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-v.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-w.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-x.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-y.sql" />
+    <None Include="PostDeploymentScripts\pds150-ins-app-cities-z.sql" />
+    <None Include="PostDeploymentScripts\pds151-ins-post-app-cities.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PostDeploymentScripts\pds100-ins-app-people.sql" />

@@ -12,7 +12,7 @@
     [Latest Recorded Population] BIGINT            NOT NULL,
     [Valid From]                 DATETIME2 (7)     NOT NULL,
     [Valid To]                   DATETIME2 (7)     NOT NULL,
-    [Lineage Key]                INT               NOT NULL,
+    [Lineage Key]                INT               NULL,
     CONSTRAINT [PK_Dimension_City] PRIMARY KEY CLUSTERED ([City Key] ASC)
 );
 GO

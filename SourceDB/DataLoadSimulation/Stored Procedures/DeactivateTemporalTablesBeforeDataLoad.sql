@@ -261,7 +261,7 @@ AS BEGIN
               + @Indent + N'INNER JOIN deleted AS d' + @CrLf
               + @Indent + N'ON i.' + QUOTENAME(@PrimaryKeyColumn) + N' = d.' + QUOTENAME(@PrimaryKeyColumn) + N';' + @CrLf
               + N'END;';
-    IF NOT EXISTS (SELECT 1 FROM sys.tables WHERE name = @TableName AND is_memory_optimized <> 0)
+    IF NOT EXISTS (SELECT 1 FROM sys.tables WHERE [name] = @TableName AND is_memory_optimized <> 0)
     BEGIN
         EXECUTE (@SQL);
     END;

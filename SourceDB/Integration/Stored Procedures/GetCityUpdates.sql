@@ -168,11 +168,15 @@ BEGIN
                                                         AND cc2.[Valid From] > cc.[Valid From]), @EndOfTime)
     FROM #CityChanges AS cc;
 
+    TRUNCATE TABLE [Integration].[CityChanges];
+
+    INSERT INTO [Integration].[CityChanges] 
     SELECT [WWI City ID], City, [State Province], Country, Continent, [Sales Territory],
            Region, Subregion, [Location] geography, [Latest Recorded Population], [Valid From],
-           [Valid To]
+           [Valid To]    
     FROM #CityChanges
-    ORDER BY [Valid From];
+    ORDER BY [Valid From]
+    ;
 
     DROP TABLE #CityChanges;
 
