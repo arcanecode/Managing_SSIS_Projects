@@ -1,5 +1,14 @@
 ﻿# About ArcaneCode
 
+## Table of Contents<a name="toc"></a>
+* [Biography](#bio)
+* [Social Media](#social)
+* [Pluralsight Courses](#pluralsight)
+* [Red Gate's Simple Talk](#redgate)
+* [Books](#books)
+* [YouTube](#youtube)
+
+## Biography<a name="bio"></a>
 Robert C. Cain is the owner of Arcane Training and Consulting, LLC.
 
 Robert creates online courses for Pluralsight (see below) and has coauthored five books, in addition to his YouTube activity. He was also a Microsoft MVP from 2008-2018.
@@ -12,7 +21,9 @@ Robert has over 15 years of experience in the Business Intelligence arena, worki
 
 Prior to his work in the BI world, Robert worked as a software developer using C# and VB.NET. Previously he worked as a developer in a variety of languages such as C++, C, COBOL, and BASIC.
 
-## Social Media
+[Back to Table of Contents](#toc)
+
+## Social Media<a name="social"></a>
 
 Twitter: [@ArcaneCode](http://twitter.com/arcanecode)
 
@@ -22,7 +33,9 @@ LinkedIn: [Robert C. Cain, ArcaneCode](https://www.linkedin.com/in/arcanecode/)
 
 Github: [ArcaneCode](https://github.com/arcanecode)
 
-## Pluralsight Courses
+[Back to Table of Contents](#toc)
+
+## Pluralsight Courses<a name="pluralsight"></a>
 
 [Getting Started with PowerShell Core for Linux and macOS](https://www.pluralsight.com/courses/getting-started-powershell-core-linux-macos)
 
@@ -60,11 +73,15 @@ Github: [ArcaneCode](https://github.com/arcanecode)
 
 [PowerPivot for Microsoft Excel 2010](https://www.pluralsight.com/courses/powerpivot-for-excel)
 
-## Redgate's SimpleTalk
+[Back to Table of Contents](#toc)
+
+## Redgate's SimpleTalk<a name="redgate"></a>
 
 Robert is a contributor to RedGate's SimpleTalk site. You can find all of his articles at: [http://arcanecode.red](http://arcanecode.red)
 
-## Books
+[Back to Table of Contents](#toc)
+
+## Books<a name="books"></a>
 
 Robert has co-authored five books on a variety of technical subjects. Note that for some of these titles the e-book version is only available via the publishers site.
 
@@ -78,7 +95,9 @@ SQL Server MVP Deep Dives Volume 1 [Publisher's Site](https://www.manning.com/bo
 
 Professional SQL Server 2014 Administration [Publisher's Site](http://www.wrox.com/WileyCDA/WroxTitle/Professional-Microsoft-SQL-Server-2014-Administration.productCd-1118859138.html) | [Amazon](https://www.amazon.com/Professional-Microsoft-Server-2014-Administration-ebook/dp/B00JUUZVN2/ref=mt_kindle?_encoding=UTF8&me=)
 
-## YouTube
+[Back to Table of Contents](#toc)
+
+## YouTube<a name="youtube"></a>
 
 Robert's company channel, Arcane Training and Consulting, can be found at:
 
@@ -88,4 +107,7 @@ Robert also has a personal YouTube channel for a variety of fun topics such as M
 
 [http://arcanetube.com](http://arcanetube.com)
 
-Copyright (c) 2008-2020, All Rights Reserved
+[Back to Table of Contents](#toc)
+
+**Copyright (c) 2008-2020, All Rights Reserved**
+

@@ -1,18 +1,47 @@
 ﻿# Course Outline
 
+## Table of Contents<a name="toc"></a>
+
+* [Document Overview](#documentoverview)
+* [Course Goals](#coursegoals)
+* [Module 1 - Course Trailer](#m01)
+* [Module 2 - Course Overview](#m02)
+* [Module 3 - Creating and Managing the Catalog](#m03)
+* [Module 4 - Deploying to the Catalog](#m04)
+* [Module 5 - Using Canned Dashboard Reports](#m05)
+* [Module 6 - Configuring a Project or Package](#m06)
+* [Module 7 - Using Environments](#m07)
+* [Module 8 - Using the Catalog for Logging](#m08)
+* [Module 9 - Developing Custom Logging](#m09)
+* [Module 10 - Creating an SSIS Package Template for Re-use](#m10)
+* [Module 11 - Creating Reusable Units of an SSIS Package Workflow](#m11)
+* [Module 12 - Implementing Parallelism for Faster Loading in SSIS](#m12)
+* [Module 13 - Summary](#m13)
+
+<a name="documentoverview"></a>
+## Document Overview
+
 Below is the overview of the Pluralsight course, Managing SSIS Projects. Note the module numbers are not used in the course video, they are for reference. In addition, they are used in the naming of the demo files in the SSIS project.
 
-## Overview
+[Back to Table of Contents](#toc)
+
+<a name="coursegoals"></a>
+## Course Goals
 
 In this course, students will learn the tools and techniques for properly managing their SSIS projects. This includes creating and managing their SSIS catalogs, as well as deploying projects to it. Students will also learn how to use package environments to manage their project needs.
 
 In addition, students will learn techniques such as package templates and package parts to speed SSIS development. They will also learn how logging works, and how to execute packages in parallel to speed package run times.
 
+[Back to Table of Contents](#toc)
 
+<a name="m01"></a>
 ## Module 1 - Course Trailer
 
 This module isn't part of the actual course. It is the overview trailer you likely viewed, which got you interested in this course.
 
+[Back to Table of Contents](#toc)
+
+<a name="m02"></a>
 ## Module 2- Course Overview
 
 ### Learning Objectives
@@ -26,6 +55,9 @@ Learners will see an overview of the demo project.
 
 Target Time: 10:00
 
+[Back to Table of Contents](#toc)
+
+<a name="m03"></a>
 ## Module 3 - Creating and Managing the Catalog
 
 ### Learning Objectives
@@ -40,7 +72,10 @@ The demo will show how to create the SSIS Catalog on a server. Students will the
 
 Target Time: 10:00
 
-## Module 4 - Deploying to the Catalog 
+[Back to Table of Contents](#toc)
+
+<a name="m04"></a>
+## Module 4 - Deploying to the Catalog
 
 ### Learning Objectives
 
@@ -52,7 +87,10 @@ Students will deploy their project to the SSIS Catalog. They will then go to the
 
 Target Time: 10:00
 
-## Module 5 - Using Canned Dashboard Reports 
+[Back to Table of Contents](#toc)
+
+<a name="m05"></a>
+## Module 5 - Using Canned Dashboard Reports
 
 ### Learning Objectives
 
@@ -64,7 +102,10 @@ In this demo, students will learn how to locate and execute the dashboard report
 
 Target Time: 10:00
 
-## Module 6 -Configuring a Project or Package 
+[Back to Table of Contents](#toc)
+
+<a name="m06"></a>
+## Module 6 - Configuring a Project or Package
 
 ### Learning Objectives
 
@@ -78,7 +119,10 @@ Students will see how to configure a package in the catalog. They will set a var
 
 Target Time: 10:00
 
-## Module 7 - Using Environments 
+[Back to Table of Contents](#toc)
+
+<a name="m07"></a>
+## Module 7 - Using Environments
 
 ### Learning Objectives
 
@@ -90,6 +134,9 @@ In this demo, students will see how to setup multiple environments, then see the
 
 Target Time: 10:00
 
+[Back to Table of Contents](#toc)
+
+<a name="m08"></a>
 ## Module 8 - Using the Catalog for Logging
 
 ### Learning Objectives
@@ -103,7 +150,10 @@ The demo will start by executing a package and learn that logging is automatic. 
 
 Target Time: 10:00
 
-## Module 9 - Developing Custom Logging 
+[Back to Table of Contents](#toc)
+
+<a name="m09"></a>
+## Module 9 - Developing Custom Logging
 
 ### Learning Objectives
 
@@ -115,7 +165,10 @@ In this demo students will see how to use script tasks in order to perform custo
 
 Target Time: 15:00
 
-## Module 10 - Creating an SSIS Package Template for Re-use 
+[Back to Table of Contents](#toc)
+
+<a name="m10"></a>
+## Module 10 - Creating an SSIS Package Template for Re-use
 
 ### Learning Objectives
 
@@ -128,7 +181,10 @@ Students will create a simple package, then convert it to a template. They will 
 
 Target Time: 15:00
 
-## Module 11 - Creating Reusable Units of an SSIS Package Workflow 
+[Back to Table of Contents](#toc)
+
+<a name="m11"></a>
+## Module 11 - Creating Reusable Units of an SSIS Package Workflow
 
 ### Learning Objectives
 
@@ -141,7 +197,10 @@ Students will first learn how to create a package part. They will then see how t
 
 Target Time: 15:00
 
-## Module 12 - Implementing Parallelism for Faster Loading in SSIS 
+[Back to Table of Contents](#toc)
+
+<a name="m12"></a>
+## Module 12 - Implementing Parallelism for Faster Loading in SSIS
 
 ### Learning Objectives
 
@@ -153,6 +212,9 @@ Students will be shown how to create a master package, then use it to run other 
 
 Target Time: 15:00
 
+[Back to Table of Contents](#toc)
+
+<a name="m13"></a>
 ## Module 13 - Summary
 
 ### Learning Objectives
@@ -164,3 +226,5 @@ Target Time: 15:00
 This module has no demos.
 
 Target Time: 05:00
+
+[Back to Table of Contents](#toc)
