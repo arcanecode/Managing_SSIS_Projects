@@ -91,11 +91,24 @@
     <Build Include="App\Views\PackageLogMasterRunsToday.sql" />
     <Build Include="App\Views\PackageLogToday.sql" />
     <Build Include="App\Functions\ElapsedTimeCompact.sql" />
+    <Build Include="Dimension\Tables\PaymentMethod.sql" />
+    <Build Include="Dimension\Tables\TransactionType.sql" />
+    <Build Include="Sequences\Sequences\PaymentMethodKey.sql" />
+    <Build Include="Sequences\Sequences\TransactionTypeKey.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TargetDB_Dev.publish.xml" />
+    <None Include="TargetDB_Test.publish.xml" />
+    <None Include="TargetDB_Prod.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="PostDeploymentScripts\Script.PostDeployment1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
+      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>True</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
+    </ArtifactReference>
   </ItemGroup>
 </Project>

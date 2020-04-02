@@ -34,10 +34,10 @@ AS BEGIN
 /*
     ALTER TABLE [Application].[DeliveryMethods] SET (SYSTEM_VERSIONING = OFF);
     ALTER TABLE [Application].[DeliveryMethods] DROP PERIOD FOR SYSTEM_TIME;
+*/
  
     ALTER TABLE [Application].[PaymentMethods] SET (SYSTEM_VERSIONING = OFF);
     ALTER TABLE [Application].[PaymentMethods] DROP PERIOD FOR SYSTEM_TIME;
-*/
 
     ALTER TABLE [Application].[People] SET (SYSTEM_VERSIONING = OFF);
     ALTER TABLE [Application].[People] DROP PERIOD FOR SYSTEM_TIME;
@@ -45,10 +45,10 @@ AS BEGIN
     ALTER TABLE [Application].[StateProvinces] SET (SYSTEM_VERSIONING = OFF);
     ALTER TABLE [Application].[StateProvinces] DROP PERIOD FOR SYSTEM_TIME;
  
-/*
     ALTER TABLE [Application].[TransactionTypes] SET (SYSTEM_VERSIONING = OFF);
     ALTER TABLE [Application].[TransactionTypes] DROP PERIOD FOR SYSTEM_TIME;
  
+/*
     ALTER TABLE [Purchasing].[SupplierCategories] SET (SYSTEM_VERSIONING = OFF);
     ALTER TABLE [Purchasing].[SupplierCategories] DROP PERIOD FOR SYSTEM_TIME;
  

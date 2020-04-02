@@ -1,4 +1,8 @@
-﻿CREATE PROCEDURE Integration.GetCityUpdates
+﻿/*
+Example:
+   EXEC [Integration].[GetCityUpdates] '2013-01-01 00:00:00', '9999-12-31 23:59:59'
+*/
+CREATE PROCEDURE Integration.GetCityUpdates
   @LastCutoff datetime2(7)
 , @NewCutoff datetime2(7)
 WITH EXECUTE AS OWNER

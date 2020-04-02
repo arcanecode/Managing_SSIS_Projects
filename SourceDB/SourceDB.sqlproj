@@ -115,6 +115,16 @@
     <None Include="PostDeploymentScripts\pds150-ins-app-cities-y.sql" />
     <None Include="PostDeploymentScripts\pds150-ins-app-cities-z.sql" />
     <None Include="PostDeploymentScripts\pds151-ins-post-app-cities.sql" />
+    <Build Include="Sequences\PaymentMethodID.sql" />
+    <Build Include="Application\Tables\PaymentMethods_Archive.sql" />
+    <Build Include="Application\Tables\PaymentMethods.sql" />
+    <Build Include="Integration\Stored Procedures\GetPaymentMethodUpdates.sql" />
+    <Build Include="Integration\Tables\PaymentMethodUpdates.sql" />
+    <Build Include="Sequences\TransactionTypeID.sql" />
+    <Build Include="Application\Tables\TransactionTypes_Archive.sql" />
+    <Build Include="Application\Tables\TransactionTypes.sql" />
+    <Build Include="Integration\Stored Procedures\GetTransactionTypeUpdates.sql" />
+    <Build Include="Integration\Tables\TransactionTypeUpdates.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PostDeploymentScripts\pds100-ins-app-people.sql" />
@@ -125,6 +135,8 @@
     <None Include="PostDeploymentScripts\pds140-ins-app-stateprovinces.sql" />
     <None Include="PostDeploymentScripts\pds142-upd-app-stateprovinces-borders.sql" />
     <None Include="PostDeploymentScripts\pds150-ins-app-cities.sql" />
+    <None Include="PostDeploymentScripts\pds130-ins-app-paymentmethods.sql" />
+    <None Include="PostDeploymentScripts\pds160-ins-app-transactiontypes.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="PostDeploymentScripts\Script.PostDeployment1.sql" />

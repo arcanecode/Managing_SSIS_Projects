@@ -17,6 +17,7 @@ GO
 
 :r .\pds100-ins-app-people.sql
 :r .\pds110-ins-app-countries.sql
+:r .\pds130-ins-app-paymentmethods.sql
 :r .\pds140-ins-app-stateprovinces.sql
 :r .\pds142-upd-app-stateprovinces-borders.sql
 :r .\pds150-ins-app-cities.sql
@@ -54,6 +55,7 @@ GO
 
 
 :r .\pds151-ins-post-app-cities.sql
+:r .\pds160-ins-app-transactiontypes.sql
 
 PRINT 'Data Load Simulation: Reactivate Temporal Tables after Data Load'
 GO
