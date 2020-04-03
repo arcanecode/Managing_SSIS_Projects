@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="3/30/2020 5:46:16 PM"
+  DTS:CreationDate="4/1/2020 7:14:55 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="ACDEV"
   DTS:CreatorName="ACDEV\arcan"
-  DTS:DTSID="{EA7C276D-DBC7-431B-BE95-C3FB09CD02D0}"
+  DTS:DTSID="{F6AB8E6B-D042-4615-AA7F-2FD2859AD838}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.93"
   DTS:LocaleID="1033"
-  DTS:ObjectName="City"
+  DTS:ObjectName="Template"
   DTS:PackageType="5"
-  DTS:VersionBuild="19"
-  DTS:VersionGUID="{9DB9D5CD-DBA9-450D-B3FF-81E92AD13E0A}">
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{E3B2CF05-EBAF-429F-B55E-10F3466A53A4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{2556AFBC-9C6E-4016-AFE5-EDB3B5057DC5}"
+      DTS:DTSID="{C7CA6ACB-E433-4F6A-8E56-8292D80B5C96}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="DataFlowName">
       <DTS:VariableValue
-        DTS:DataType="8">DFT - Load Table Dim City</DTS:VariableValue>
+        DTS:DataType="8">DFT - Load Table Transaction Type</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{1CB0070A-6067-43B6-BE57-1AFCD266926A}"
+      DTS:DTSID="{CA1EFCDA-ADB5-4B1B-A417-EAAE55035B0B}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="ExecutionBegan">
@@ -37,7 +37,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{BA86236A-9A26-427F-8CE5-FFFD3113660F}"
+      DTS:DTSID="{B7E7782C-7D02-4074-81E5-3F3F812DD614}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="ExecutionEnded">
@@ -47,16 +47,16 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{2B03BAA9-C2C2-4FD2-98A2-8B63EBAF665E}"
+      DTS:DTSID="{E0E8D355-BAA6-4924-A426-1FE4117CBC07}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="PackageName">
       <DTS:VariableValue
-        DTS:DataType="8">City.dtsx</DTS:VariableValue>
+        DTS:DataType="8">TransactionType.dtsx</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D22D267A-E2B6-4368-8536-09D88418B7B5}"
+      DTS:DTSID="{0BE3BA35-544F-4EF5-BEEB-9475C75EFEDB}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="RowsDeleted">
@@ -65,7 +65,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{04FEE017-662F-435A-9F84-0FE5A93A1C9E}"
+      DTS:DTSID="{3D1D17A2-8045-4E1A-8B42-238556260181}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="RowsInserted">
@@ -74,7 +74,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{911C790F-E87D-4C38-9852-5C6199E33604}"
+      DTS:DTSID="{ACEFC291-71CC-4171-8FFD-FADE4CF49D6C}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="RowsUnaffected">
@@ -83,50 +83,50 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{278EC5C9-3D11-46E6-864F-9876D930AAF1}"
+      DTS:DTSID="{FFB2E14A-7C95-4365-BE1A-6504FC499414}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="RowsUpdated">
       <DTS:VariableValue
-        DTS:DataType="20">0</DTS:VariableValue>
+        DTS:DataType="3">0</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C278D5D2-12AA-47AE-8D85-ADF2BC4552CB}"
+      DTS:DTSID="{5BD7ED0A-3436-4882-8E99-C3058739981F}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="SqlTruncate">
       <DTS:VariableValue
-        DTS:DataType="8">TRUNCATE TABLE Dimension.City</DTS:VariableValue>
+        DTS:DataType="8">TRUNCATE TABLE [Dimension].[Transaction Type]</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{0F414DB1-23C3-473E-B1D3-DFB09B74C3A6}"
+      DTS:DTSID="{66957644-CB57-481E-9AD2-DC03F285A7DE}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="SqlUpdateSourceSystem">
       <DTS:VariableValue
-        DTS:DataType="8">EXEC [Integration].[GetCityUpdates] '2013-01-01 00:00:00', '9999-12-31 23:59:59'</DTS:VariableValue>
+        DTS:DataType="8">EXEC [Integration].[GetTransactionTypeUpdates] '2013-01-01 00:00:00', '9999-12-31 23:59:59'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{1CBEAB0E-76A5-4243-A0FC-23B89580246D}"
+      DTS:DTSID="{23611CF8-8375-4347-9CCB-EAC25B3D89C2}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="SubFlowInformation">
       <DTS:VariableValue
-        DTS:DataType="8">City</DTS:VariableValue>
+        DTS:DataType="8">Transaction Type</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\DFT - Load Table Dim City"
+      DTS:refId="Package\DFT - Load Table Dim Transaction Type"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{B1E91C52-9A2C-4A4C-9DAB-FB931652BCB6}"
+      DTS:DTSID="{769D4D86-636F-4CAF-B4D2-EE19EE79BC96}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="DFT - Load Table Dim City"
+      DTS:ObjectName="DFT - Load Table Dim Transaction Type"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -134,7 +134,7 @@
           version="1">
           <components>
             <component
-              refId="Package\DFT - Load Table Dim City\CNT - Rows Inserted"
+              refId="Package\DFT - Load Table Dim Transaction Type\CNT - Rows Inserted"
               componentClassID="Microsoft.RowCount"
               contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
@@ -147,7 +147,7 @@
               </properties>
               <inputs>
                 <input
-                  refId="Package\DFT - Load Table Dim City\CNT - Rows Inserted.Inputs[Row Count Input 1]"
+                  refId="Package\DFT - Load Table Dim Transaction Type\CNT - Rows Inserted.Inputs[Row Count Input 1]"
                   hasSideEffects="true"
                   name="Row Count Input 1">
                   <externalMetadataColumns />
@@ -155,19 +155,19 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load Table Dim City\CNT - Rows Inserted.Outputs[Row Count Output 1]"
+                  refId="Package\DFT - Load Table Dim Transaction Type\CNT - Rows Inserted.Outputs[Row Count Output 1]"
                   name="Row Count Output 1"
-                  synchronousInputId="Package\DFT - Load Table Dim City\CNT - Rows Inserted.Inputs[Row Count Input 1]">
+                  synchronousInputId="Package\DFT - Load Table Dim Transaction Type\CNT - Rows Inserted.Inputs[Row Count Input 1]">
                   <externalMetadataColumns />
                 </output>
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load Table Dim City\DST - Dim City"
+              refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="DST - Dim City"
+              name="DST - Dim Transaction Type"
               usesDispositions="true"
               version="4">
               <properties>
@@ -178,7 +178,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Dimension].[City]</property>
+                  name="OpenRowset">[Dimension].[Transaction Type]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -220,7 +220,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT - Load Table Dim City\DST - Dim City.Connections[OleDbConnection]"
+                  refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Connections[OleDbConnection]"
                   connectionManagerID="{4FE18A1E-5A7F-4AF5-B75B-D651E7C4CA03}:external"
                   connectionManagerRefId="Project.ConnectionManagers[localhost.TargetDB_Dev]"
                   description="The OLE DB runtime connection used to access the database."
@@ -228,153 +228,67 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input]"
+                  refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].Columns[WWI City ID]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input].Columns[WWI Transaction Type ID]"
                       cachedDataType="i4"
-                      cachedName="WWI City ID"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[WWI City ID]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[WWI City ID]" />
+                      cachedName="WWI Transaction Type ID"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input].ExternalColumns[WWI Transaction Type ID]"
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].Columns[WWI Transaction Type ID]" />
                     <inputColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].Columns[City]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input].Columns[Transaction Type]"
                       cachedDataType="wstr"
                       cachedLength="50"
-                      cachedName="City"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[City]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[City]" />
+                      cachedName="Transaction Type"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input].ExternalColumns[Transaction Type]"
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].Columns[Transaction Type]" />
                     <inputColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].Columns[State Province]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="State Province"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[State Province]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[State Province]" />
-                    <inputColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].Columns[Country]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Country"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Country]" />
-                    <inputColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].Columns[Continent]"
-                      cachedDataType="wstr"
-                      cachedLength="30"
-                      cachedName="Continent"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Continent]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Continent]" />
-                    <inputColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].Columns[Sales Territory]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Sales Territory"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Sales Territory]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Sales Territory]" />
-                    <inputColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].Columns[Region]"
-                      cachedDataType="wstr"
-                      cachedLength="30"
-                      cachedName="Region"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Region]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Region]" />
-                    <inputColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].Columns[Subregion]"
-                      cachedDataType="wstr"
-                      cachedLength="30"
-                      cachedName="Subregion"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Subregion]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Subregion]" />
-                    <inputColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].Columns[Latest Recorded Population]"
-                      cachedDataType="i8"
-                      cachedName="Latest Recorded Population"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Latest Recorded Population]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Latest Recorded Population]" />
-                    <inputColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].Columns[Valid From]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input].Columns[Valid From]"
                       cachedDataType="dbTimeStamp2"
                       cachedName="Valid From"
                       cachedScale="7"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Valid From]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Valid From]" />
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input].ExternalColumns[Valid From]"
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].Columns[Valid From]" />
                     <inputColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].Columns[Valid To]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input].Columns[Valid To]"
                       cachedDataType="dbTimeStamp2"
                       cachedName="Valid To"
                       cachedScale="7"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Valid To]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Valid To]" />
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input].ExternalColumns[Valid To]"
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].Columns[Valid To]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[City Key]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input].ExternalColumns[Transaction Type Key]"
                       dataType="i4"
-                      name="City Key" />
+                      name="Transaction Type Key" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[WWI City ID]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input].ExternalColumns[WWI Transaction Type ID]"
                       dataType="i4"
-                      name="WWI City ID" />
+                      name="WWI Transaction Type ID" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[City]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input].ExternalColumns[Transaction Type]"
                       dataType="wstr"
                       length="50"
-                      name="City" />
+                      name="Transaction Type" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[State Province]"
-                      dataType="wstr"
-                      length="50"
-                      name="State Province" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
-                      dataType="wstr"
-                      length="60"
-                      name="Country" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Continent]"
-                      dataType="wstr"
-                      length="30"
-                      name="Continent" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Sales Territory]"
-                      dataType="wstr"
-                      length="50"
-                      name="Sales Territory" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Region]"
-                      dataType="wstr"
-                      length="30"
-                      name="Region" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Subregion]"
-                      dataType="wstr"
-                      length="30"
-                      name="Subregion" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Location]"
-                      dataType="image"
-                      name="Location" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Latest Recorded Population]"
-                      dataType="i8"
-                      name="Latest Recorded Population" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Valid From]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input].ExternalColumns[Valid From]"
                       dataType="dbTimeStamp2"
                       name="Valid From"
                       scale="7" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Valid To]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input].ExternalColumns[Valid To]"
                       dataType="dbTimeStamp2"
                       name="Valid To"
                       scale="7" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input].ExternalColumns[Lineage Key]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input].ExternalColumns[Lineage Key]"
                       dataType="i4"
                       name="Lineage Key" />
                   </externalMetadataColumns>
@@ -382,22 +296,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load Table Dim City\DST - Dim City.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load Table Dim City\DST - Dim City.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load Table Dim City\DST - Dim City.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load Table Dim City\DST - Dim City.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -406,11 +320,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges"
+              refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
               description="OLE DB Source"
-              name="SRC - Integration_CityChanges"
+              name="SRC - TransactionType"
               usesDispositions="true"
               version="7">
               <properties>
@@ -421,7 +335,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Integration].[CityChanges]</property>
+                  name="OpenRowset">[Integration].[TransactionTypeUpdates]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -455,7 +369,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Connections[OleDbConnection]"
+                  refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Connections[OleDbConnection]"
                   connectionManagerID="{1A0D0032-C347-43A1-8ED5-C1179E96F602}:external"
                   connectionManagerRefId="Project.ConnectionManagers[localhost.SourceDB]"
                   description="The OLE DB runtime connection used to access the database."
@@ -463,123 +377,45 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output]"
+                  refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[WWI City ID]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].Columns[WWI Transaction Type ID]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[WWI City ID]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[WWI City ID]"
-                      name="WWI City ID"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].ExternalColumns[WWI Transaction Type ID]"
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].Columns[WWI Transaction Type ID]"
+                      name="WWI Transaction Type ID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[City]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].Columns[Transaction Type]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[City]"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].ExternalColumns[Transaction Type]"
                       length="50"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[City]"
-                      name="City"
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].Columns[Transaction Type]"
+                      name="Transaction Type"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[State Province]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[State Province]"
-                      length="50"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[State Province]"
-                      name="State Province"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Country]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Country]"
-                      length="50"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Country]"
-                      name="Country"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Continent]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Continent]"
-                      length="30"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Continent]"
-                      name="Continent"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Sales Territory]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Sales Territory]"
-                      length="50"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Sales Territory]"
-                      name="Sales Territory"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Region]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Region]"
-                      length="30"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Region]"
-                      name="Region"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Subregion]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Subregion]"
-                      length="30"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Subregion]"
-                      name="Subregion"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[geography]"
-                      dataType="image"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[geography]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[geography]"
-                      name="geography"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Latest Recorded Population]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Latest Recorded Population]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Latest Recorded Population]"
-                      name="Latest Recorded Population"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Valid From]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].Columns[Valid From]"
                       dataType="dbTimeStamp2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Valid From]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Valid From]"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].ExternalColumns[Valid From]"
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].Columns[Valid From]"
                       name="Valid From"
                       scale="7"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Valid To]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].Columns[Valid To]"
                       dataType="dbTimeStamp2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Valid To]"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].Columns[Valid To]"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].ExternalColumns[Valid To]"
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].Columns[Valid To]"
                       name="Valid To"
                       scale="7"
                       truncationRowDisposition="FailComponent" />
@@ -587,148 +423,64 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[WWI City ID]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].ExternalColumns[WWI Transaction Type ID]"
                       dataType="i4"
-                      name="WWI City ID" />
+                      name="WWI Transaction Type ID" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[City]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].ExternalColumns[Transaction Type]"
                       dataType="wstr"
                       length="50"
-                      name="City" />
+                      name="Transaction Type" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[State Province]"
-                      dataType="wstr"
-                      length="50"
-                      name="State Province" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Country]"
-                      dataType="wstr"
-                      length="50"
-                      name="Country" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Continent]"
-                      dataType="wstr"
-                      length="30"
-                      name="Continent" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Sales Territory]"
-                      dataType="wstr"
-                      length="50"
-                      name="Sales Territory" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Region]"
-                      dataType="wstr"
-                      length="30"
-                      name="Region" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Subregion]"
-                      dataType="wstr"
-                      length="30"
-                      name="Subregion" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[geography]"
-                      dataType="image"
-                      name="geography" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Latest Recorded Population]"
-                      dataType="i8"
-                      name="Latest Recorded Population" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Valid From]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].ExternalColumns[Valid From]"
                       dataType="dbTimeStamp2"
                       name="Valid From"
                       scale="7" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output].ExternalColumns[Valid To]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output].ExternalColumns[Valid To]"
                       dataType="dbTimeStamp2"
                       name="Valid To"
                       scale="7" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output]"
+                  refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[WWI City ID]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Error Output].Columns[WWI Transaction Type ID]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[WWI City ID]"
-                      name="WWI City ID" />
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Error Output].Columns[WWI Transaction Type ID]"
+                      name="WWI Transaction Type ID" />
                     <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[City]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Error Output].Columns[Transaction Type]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[City]"
-                      name="City" />
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Error Output].Columns[Transaction Type]"
+                      name="Transaction Type" />
                     <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[State Province]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[State Province]"
-                      name="State Province" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Country]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Country]"
-                      name="Country" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Continent]"
-                      dataType="wstr"
-                      length="30"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Continent]"
-                      name="Continent" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Sales Territory]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Sales Territory]"
-                      name="Sales Territory" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Region]"
-                      dataType="wstr"
-                      length="30"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Region]"
-                      name="Region" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Subregion]"
-                      dataType="wstr"
-                      length="30"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Subregion]"
-                      name="Subregion" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[geography]"
-                      dataType="image"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[geography]"
-                      name="geography" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Latest Recorded Population]"
-                      dataType="i8"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Latest Recorded Population]"
-                      name="Latest Recorded Population" />
-                    <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Valid From]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Error Output].Columns[Valid From]"
                       dataType="dbTimeStamp2"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Valid From]"
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Error Output].Columns[Valid From]"
                       name="Valid From"
                       scale="7" />
                     <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Valid To]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Error Output].Columns[Valid To]"
                       dataType="dbTimeStamp2"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[Valid To]"
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Error Output].Columns[Valid To]"
                       name="Valid To"
                       scale="7" />
                     <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -739,15 +491,15 @@
           </components>
           <paths>
             <path
-              refId="Package\DFT - Load Table Dim City.Paths[OLE DB Source Output]"
-              endId="Package\DFT - Load Table Dim City\CNT - Rows Inserted.Inputs[Row Count Input 1]"
+              refId="Package\DFT - Load Table Dim Transaction Type.Paths[OLE DB Source Output]"
+              endId="Package\DFT - Load Table Dim Transaction Type\CNT - Rows Inserted.Inputs[Row Count Input 1]"
               name="OLE DB Source Output"
-              startId="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges.Outputs[OLE DB Source Output]" />
+              startId="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\DFT - Load Table Dim City.Paths[Row Count Output 1]"
-              endId="Package\DFT - Load Table Dim City\DST - Dim City.Inputs[OLE DB Destination Input]"
+              refId="Package\DFT - Load Table Dim Transaction Type.Paths[Row Count Output 1]"
+              endId="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type.Inputs[OLE DB Destination Input]"
               name="Row Count Output 1"
-              startId="Package\DFT - Load Table Dim City\CNT - Rows Inserted.Outputs[Row Count Output 1]" />
+              startId="Package\DFT - Load Table Dim Transaction Type\CNT - Rows Inserted.Outputs[Row Count Output 1]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -756,7 +508,7 @@
       DTS:refId="Package\EXP - Set ExecutionBegan Time"
       DTS:CreationName="Microsoft.ExpressionTask"
       DTS:Description="Expression Task"
-      DTS:DTSID="{0C13048F-4605-4675-AD1C-9736D21F19A6}"
+      DTS:DTSID="{FBC4FC37-8AB8-46BF-9BFF-55601144BA4C}"
       DTS:ExecutableType="Microsoft.ExpressionTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="EXP - Set ExecutionBegan Time"
@@ -772,7 +524,7 @@
       DTS:refId="Package\EXP - Set ExecutionEnded Time"
       DTS:CreationName="Microsoft.ExpressionTask"
       DTS:Description="Expression Task"
-      DTS:DTSID="{87b832f0-cbd2-4401-8331-b89c9a03dabe}"
+      DTS:DTSID="{0C96DAE1-0BC2-4570-A4F8-28D13222AC30}"
       DTS:ExecutableType="Microsoft.ExpressionTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="EXP - Set ExecutionEnded Time"
@@ -785,13 +537,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\SQL - Insert App-PackageLogger for Package City"
+      DTS:refId="Package\SQL - Insert App-PackageLogger for Package Transaction Type"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{192D980F-198F-4048-8921-E94D677549A1}"
+      DTS:DTSID="{D3EF64D5-EF45-4D7C-810B-DA1557FBBB80}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="SQL - Insert App-PackageLogger for Package City"
+      DTS:ObjectName="SQL - Insert App-PackageLogger for Package Transaction Type"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
@@ -839,13 +591,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\SQL - Truncate Table Dim City"
+      DTS:refId="Package\SQL - Truncate Table Dim Transaction Type"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{1894D472-2B70-4748-BA22-A054EE65A6F3}"
+      DTS:DTSID="{19793F42-EBD3-4229-BE68-379FDC4B6453}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="SQL - Truncate Table Dim City"
+      DTS:ObjectName="SQL - Truncate Table Dim Transaction Type"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
@@ -857,13 +609,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\SQL - Update App-PackageLogger for Package City"
+      DTS:refId="Package\SQL - Update App-PackageLogger for Package TransactionType"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{bfef958a-6076-4277-a5aa-eec4193d2e2f}"
+      DTS:DTSID="{42EA3527-FD96-4265-889D-5667CCC145B0}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="SQL - Update App-PackageLogger for Package City"
+      DTS:ObjectName="SQL - Update App-PackageLogger for Package TransactionType"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
@@ -929,21 +681,20 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\SQL - Update Source System Table City"
+      DTS:refId="Package\SQL - Update Source System Table Transaction Type"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{2548CB32-DA1D-41CB-995F-F0FEF5368DB3}"
+      DTS:DTSID="{1A3AD50E-6EF2-4853-9FED-022CDE87DDCF}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="SQL - Update Source System Table City"
+      DTS:ObjectName="SQL - Update Source System Table Transaction Type"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{1A0D0032-C347-43A1-8ED5-C1179E96F602}"
-          SQLTask:SqlStmtSourceType="Variable"
-          SQLTask:SqlStatementSource="User::SqlUpdateSourceSystem" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="-- Because this is just a demo, I'm hard coding the dates&#xA;-- If this was a real world package I'd be passing them in as parameters&#xA;&#xA;EXEC [Integration].[GetCityUpdates] '2013-01-01 00:00:00', '9999-12-31 23:59:59'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -951,51 +702,51 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{7820EAB5-8F0C-43B6-9242-105CBEAC8342}"
-      DTS:From="Package\SQL - Truncate Table Dim City"
+      DTS:DTSID="{473EA9BA-B936-4662-9A0A-AEE270F4D98C}"
+      DTS:From="Package\SQL - Truncate Table Dim Transaction Type"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\SQL - Update Source System Table City" />
+      DTS:To="Package\SQL - Update Source System Table Transaction Type" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{4F9B0D59-6EDC-47A0-B66C-A8CFB4C04AFA}"
+      DTS:DTSID="{328A6255-ADCD-4D00-A43C-2DDA4F785CF9}"
       DTS:From="Package\EXP - Set ExecutionBegan Time"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
-      DTS:To="Package\SQL - Insert App-PackageLogger for Package City" />
+      DTS:To="Package\SQL - Insert App-PackageLogger for Package Transaction Type" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{689BA822-90B8-4BF3-A5D8-2557E131498C}"
-      DTS:From="Package\SQL - Insert App-PackageLogger for Package City"
+      DTS:DTSID="{5E15F3CF-0297-4EE0-A657-984D76E3D486}"
+      DTS:From="Package\SQL - Insert App-PackageLogger for Package Transaction Type"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
-      DTS:To="Package\SQL - Truncate Table Dim City" />
+      DTS:To="Package\SQL - Truncate Table Dim Transaction Type" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{2973F49B-F63B-469F-9808-5C8B23DDFB3C}"
-      DTS:From="Package\DFT - Load Table Dim City"
+      DTS:DTSID="{8A2894D4-3FC2-4613-B141-94B94B89B9C0}"
+      DTS:From="Package\DFT - Load Table Dim Transaction Type"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
       DTS:To="Package\EXP - Set ExecutionEnded Time" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
       DTS:CreationName=""
-      DTS:DTSID="{5FC7B5D7-C88E-45FE-B1A5-4782D5AA6801}"
+      DTS:DTSID="{B6EF4C31-05DE-4585-9BC8-55BFC8B2BBF8}"
       DTS:From="Package\EXP - Set ExecutionEnded Time"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
-      DTS:To="Package\SQL - Update App-PackageLogger for Package City" />
+      DTS:To="Package\SQL - Update App-PackageLogger for Package TransactionType" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
       DTS:CreationName=""
-      DTS:DTSID="{DD2A4AD8-5ECD-4E13-B768-08A0284858A8}"
-      DTS:From="Package\SQL - Update Source System Table City"
+      DTS:DTSID="{478F189A-7F14-4540-8174-82389448EA9A}"
+      DTS:From="Package\SQL - Update Source System Table Transaction Type"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 5"
-      DTS:To="Package\DFT - Load Table Dim City" />
+      DTS:To="Package\DFT - Load Table Dim Transaction Type" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -1010,36 +761,36 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="318,42"
-          Id="Package\DFT - Load Table Dim City"
-          TopLeft="191,483.333333333333" />
+          Size="378,42"
+          Id="Package\DFT - Load Table Dim Transaction Type"
+          TopLeft="60,483.333333333333" />
         <NodeLayout
-          Size="318,42"
+          Size="378,42"
           Id="Package\EXP - Set ExecutionBegan Time"
-          TopLeft="191,60" />
+          TopLeft="60,60" />
         <NodeLayout
-          Size="318,42"
+          Size="378,42"
           Id="Package\EXP - Set ExecutionEnded Time"
-          TopLeft="191,589.166666666667" />
+          TopLeft="60,589.166666666667" />
         <NodeLayout
-          Size="318,42"
-          Id="Package\SQL - Insert App-PackageLogger for Package City"
-          TopLeft="191,165.833333333333" />
+          Size="378,42"
+          Id="Package\SQL - Insert App-PackageLogger for Package Transaction Type"
+          TopLeft="60,165.833333333333" />
         <NodeLayout
-          Size="318,42"
-          Id="Package\SQL - Truncate Table Dim City"
-          TopLeft="191,271.666666666667" />
+          Size="378,42"
+          Id="Package\SQL - Truncate Table Dim Transaction Type"
+          TopLeft="60,271.666666666667" />
         <NodeLayout
-          Size="318,42"
-          Id="Package\SQL - Update App-PackageLogger for Package City"
-          TopLeft="191,695" />
+          Size="378,42"
+          Id="Package\SQL - Update App-PackageLogger for Package TransactionType"
+          TopLeft="60,695" />
         <NodeLayout
-          Size="318,42"
-          Id="Package\SQL - Update Source System Table City"
-          TopLeft="191,377.5" />
+          Size="378,42"
+          Id="Package\SQL - Update Source System Table Transaction Type"
+          TopLeft="60,377.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="350,313.666666666667">
+          TopLeft="249,313.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1061,7 +812,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="350,102">
+          TopLeft="249,102">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1083,7 +834,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="350,207.833333333333">
+          TopLeft="249,207.833333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1105,7 +856,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="350,525.333333333333">
+          TopLeft="249,525.333333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1127,7 +878,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="350,631.166666666667">
+          TopLeft="249,631.166666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1149,7 +900,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="350,419.5">
+          TopLeft="249,419.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1169,79 +920,103 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="Steps to use this template.&#xA;&#xA;1. Set the following variables:&#xA;&#xA;     DataFlowName - The name of the main data flow&#xA;&#xA;     PackageName - The name of the dtsx file for this package&#xA;&#xA;     SqlTruncate - The SQL Clause used to truncate the target table&#xA;&#xA;     SqlUpdateSourceSystem - Update to execute the source system stored proc for the table we are pulling from&#xA;&#xA;     SubFlowInformation - If the control flow goes down multiple paths, this can be used to indicate the current path. &#xA;                                         Otherwise, just use the name of the package without the dtsx extension&#xA;&#xA;2. Edit the names of the following control flow items to replace the word 'template' with the table or package name&#xA;&#xA;     SQL - Insert App-PackageLogger for Package template&#xA;&#xA;     SQL - Truncate Table template&#xA;&#xA;     SQL - Update Source System Table template&#xA;&#xA;     DFT - Load table template&#xA;&#xA;     SQL - Update App-PackageLogger for Package template&#xA;&#xA;&#xA;3. Edit the data flow to load the correct data for this table.&#xA;&#xA;4. Format the layout once package development is complete&#xA;&#xA;     If the Layout toolbar doesn't appear, right click in the toolbar area and pick the Layout toolbar&#xA;&#xA;     Use the mouse to select all the objects in the control flow&#xA;&#xA;     In the toolbar, choose the Align Lefts command&#xA;&#xA;     Next, choose the Make Same Width command&#xA;&#xA;     Now choose the Make Vertical Spacing Equal command&#xA;&#xA;     Repeat these steps for the Data Flow&#xA;&#xA;5. (Optional) You can remove this instructional annotation by right clicking and picking Delete Annotation."
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="644,742"
+          Id="5256e8ad-2e54-4c2d-90bb-e6003e63f540"
+          TopLeft="469,61" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\DFT - Load Table Dim City">
+    design-time-name="Package\DFT - Load Table Dim Transaction Type">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph">
+        <AnnotationLayout
+          Text="Start with the OLEDB Source"
+          ParentId="Package\DFT - Load Table Dim Transaction Type"
+          FontInfo="{assembly:Null}"
+          Size="199,40"
+          Id="99c0b37b-dc17-484e-90d7-d27feb06d0d5"
+          TopLeft="559,89" />
+        <AnnotationLayout
+          Text="Add a RowCount and assign to RowsInserted"
+          ParentId="Package\DFT - Load Table Dim Transaction Type"
+          FontInfo="{assembly:Null}"
+          Size="266,40"
+          Id="6073360e-cf2d-42a8-aad0-16404f298c88"
+          TopLeft="559,189.5" />
+        <AnnotationLayout
+          Text="End with OLEDB Destination"
+          ParentId="Package\DFT - Load Table Dim Transaction Type"
+          FontInfo="{assembly:Null}"
+          Size="178,40"
+          Id="3aa2c84a-2580-47b9-9037-f101262a5ecc"
+          TopLeft="559,290" />
         <NodeLayout
-          Size="224,42"
-          Id="Package\DFT - Load Table Dim City\DST - Dim City"
-          TopLeft="264,287" />
+          Size="212,42"
+          Id="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType"
+          TopLeft="318,86" />
         <NodeLayout
-          Size="224,42"
-          Id="Package\DFT - Load Table Dim City\CNT - Rows Inserted"
-          TopLeft="264,184.5" />
+          Size="212,42"
+          Id="Package\DFT - Load Table Dim Transaction Type\CNT - Rows Inserted"
+          TopLeft="318,191.5" />
         <NodeLayout
-          Size="224,42"
-          Id="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges"
-          TopLeft="264,82" />
+          Size="212,42"
+          Id="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type"
+          TopLeft="318,297" />
         <EdgeLayout
-          Id="Package\DFT - Load Table Dim City.Paths[Row Count Output 1]"
-          TopLeft="376,226.5">
+          Id="Package\DFT - Load Table Dim Transaction Type.Paths[OLE DB Source Output]"
+          TopLeft="424,128">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60.5"
+              EndConnector="0,63.5"
               Start="0,0"
-              End="0,53">
+              End="0,56">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53" />
+                    End="0,56" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load Table Dim City.Paths[OLE DB Source Output]"
-          TopLeft="376,124">
+          Id="Package\DFT - Load Table Dim Transaction Type.Paths[Row Count Output 1]"
+          TopLeft="424,233.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60.5"
+              EndConnector="0,63.5"
               Start="0,0"
-              End="0,53">
+              End="0,56">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53" />
+                    End="0,56" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Table Dim City\DST - Dim City">
+    design-time-name="Package\DFT - Load Table Dim Transaction Type\SRC - TransactionType">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1254,7 +1029,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges">
+    design-time-name="Package\DFT - Load Table Dim Transaction Type\DST - Dim Transaction Type">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

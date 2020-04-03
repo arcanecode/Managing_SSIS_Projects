@@ -237,7 +237,9 @@ Anchors can also go backwords. For example you could use code like this to jump 
 <a name="Footnotes"></a>
 ## Footnotes
 
-Not all parsers support footnotes, but most do. To do a footnote, use a square bracket, caret, then the footnote number, such as `[^1]`. 
+Not all parsers support footnotes, but many do. For example, the markdown extension here in Visual Studio does, but the markdown engine in GitHub does not.
+
+To do a footnote, use a square bracket, caret, then the footnote number, such as `[^1]`. 
 
 ```
 Some text with a [^1] footnote

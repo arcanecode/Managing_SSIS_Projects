@@ -27,6 +27,7 @@ select [PackageLoggerId]
      , case when [RowsUnaffected] is null then '' else format([RowsUnaffected], '#,0') end as [RowsUnaffectedF]
      , [App].[ElapsedTimeText]([ExecutionBegan], [ExecutionEnded])    as ExecutionTimeText
      , [App].[ElapsedTimeCompact]([ExecutionBegan], [ExecutionEnded]) as ExecutionTime
+     , case when [RuntimeEnvironment] is null then '' else [RuntimeEnvironment] end        as [RuntimeEnvironment]
      , [RowsInserted]
      , [RowsUpdated]
      , [RowsDeleted]

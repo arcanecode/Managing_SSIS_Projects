@@ -1,0 +1,1086 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/1/2020 7:14:55 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ACDEV"
+  DTS:CreatorName="ACDEV\arcan"
+  DTS:DTSID="{21423F6F-899C-4C2F-857B-35CDA619C1FC}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.93"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Template"
+  DTS:PackageType="5"
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{993A33D6-D2BC-4D70-82DA-5A262054E655}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{65515268-1054-43D5-AAA9-792DEFE1A17C}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="DataFlowName">
+      <DTS:VariableValue
+        DTS:DataType="8">DFT - Load Table Dim Employee</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3A87FE12-526C-4823-98BD-B0728BCB6FFE}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ExecutionBegan">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EFF38D5D-5AAF-4FD7-A910-784535A1BCC0}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ExecutionEnded">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{587F9FD0-201F-478D-9FFA-4483222DBAB5}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageName">
+      <DTS:VariableValue
+        DTS:DataType="8">EmployeeV2.dtsx</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EC5E1019-49B9-4757-8EC9-B1ED20FC7730}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="RowsDeleted">
+      <DTS:VariableValue
+        DTS:DataType="20">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1B6FCED5-3A35-4C8F-B28A-5FDED8C6740D}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="RowsInserted">
+      <DTS:VariableValue
+        DTS:DataType="20">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{409EE5A7-E887-481D-A5CD-686175324881}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="RowsUnaffected">
+      <DTS:VariableValue
+        DTS:DataType="20">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{BE34B125-D02B-4299-A8AA-CA68D484198B}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="RowsUpdated">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3E22F1B2-8D1A-4C0A-9AB5-D841E8F9189A}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SqlTruncate">
+      <DTS:VariableValue
+        DTS:DataType="8">TRUNCATE TABLE Dimension.Employee</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EAA63ED7-6BB5-4CFE-95DE-9D0C60099F27}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SqlUpdateSourceSystem">
+      <DTS:VariableValue
+        DTS:DataType="8">Employee Package does not use this variable</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{39D4D0C3-8B0B-43B5-BD05-A8B2E928AFBF}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SubFlowInformation">
+      <DTS:VariableValue
+        DTS:DataType="8">Employee</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DFT - Load Table Dim Employee"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D003B16E-339C-4D37-9126-A573E4886054}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFT - Load Table Dim Employee"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFT - Load Table Dim Employee\CNT - Rows Inserted"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="CNT - Rows Inserted">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::RowsInserted</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\DFT - Load Table Dim Employee\CNT - Rows Inserted.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load Table Dim Employee\CNT - Rows Inserted.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\DFT - Load Table Dim Employee\CNT - Rows Inserted.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="DST - Dim Employee"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Dimension].[Employee]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Connections[OleDbConnection]"
+                  connectionManagerID="{4FE18A1E-5A7F-4AF5-B75B-D651E7C4CA03}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.TargetDB_Dev]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].Columns[WWI Employee ID]"
+                      cachedDataType="i4"
+                      cachedName="WWI Employee ID"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[WWI Employee ID]"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[WWI Employee ID]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].Columns[Employee]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Employee"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[Employee]"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Employee]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].Columns[Preferred Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Preferred Name"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[Preferred Name]"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Preferred Name]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].Columns[Is Salesperson]"
+                      cachedDataType="bool"
+                      cachedName="Is Salesperson"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[Is Salesperson]"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Is Salesperson]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].Columns[Photo]"
+                      cachedDataType="image"
+                      cachedName="Photo"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[Photo]"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Photo]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].Columns[Valid From]"
+                      cachedDataType="dbTimeStamp2"
+                      cachedName="Valid From"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[Valid From]"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Valid From]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].Columns[Valid To]"
+                      cachedDataType="dbTimeStamp2"
+                      cachedName="Valid To"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[Valid To]"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Valid To]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[Employee Key]"
+                      dataType="i4"
+                      name="Employee Key" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[WWI Employee ID]"
+                      dataType="i4"
+                      name="WWI Employee ID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[Employee]"
+                      dataType="wstr"
+                      length="50"
+                      name="Employee" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[Preferred Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Preferred Name" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[Is Salesperson]"
+                      dataType="bool"
+                      name="Is Salesperson" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[Photo]"
+                      dataType="image"
+                      name="Photo" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[Valid From]"
+                      dataType="dbTimeStamp2"
+                      name="Valid From"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[Valid To]"
+                      dataType="dbTimeStamp2"
+                      name="Valid To"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input].ExternalColumns[Lineage Key]"
+                      dataType="i4"
+                      name="Lineage Key" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Load Table Dim Employee\SRC - Person"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="SRC - Person"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT [PersonID] AS [WWI Employee ID]
+      ,[FullName] AS [Employee]
+      ,[PreferredName] AS [Preferred Name]
+      ,[IsSalesperson] AS [Is Salesperson]
+      ,[Photo] AS [Photo]
+      ,[ValidFrom] AS [Valid From]
+      ,[ValidTo] AS [Valid To]
+  FROM [SourceDB].[Application].[People]
+ WHERE [IsEmployee] = 1</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - Load Table Dim Employee\SRC - Person.Connections[OleDbConnection]"
+                  connectionManagerID="{1A0D0032-C347-43A1-8ED5-C1179E96F602}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.SourceDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[WWI Employee ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].ExternalColumns[WWI Employee ID]"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[WWI Employee ID]"
+                      name="WWI Employee ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Employee]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].ExternalColumns[Employee]"
+                      length="50"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Employee]"
+                      name="Employee"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Preferred Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].ExternalColumns[Preferred Name]"
+                      length="50"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Preferred Name]"
+                      name="Preferred Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Is Salesperson]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].ExternalColumns[Is Salesperson]"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Is Salesperson]"
+                      name="Is Salesperson"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Photo]"
+                      dataType="image"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].ExternalColumns[Photo]"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Photo]"
+                      name="Photo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Valid From]"
+                      dataType="dbTimeStamp2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].ExternalColumns[Valid From]"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Valid From]"
+                      name="Valid From"
+                      scale="7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Valid To]"
+                      dataType="dbTimeStamp2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].ExternalColumns[Valid To]"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].Columns[Valid To]"
+                      name="Valid To"
+                      scale="7"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].ExternalColumns[WWI Employee ID]"
+                      dataType="i4"
+                      name="WWI Employee ID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].ExternalColumns[Employee]"
+                      dataType="wstr"
+                      length="50"
+                      name="Employee" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].ExternalColumns[Preferred Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Preferred Name" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].ExternalColumns[Is Salesperson]"
+                      dataType="bool"
+                      name="Is Salesperson" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].ExternalColumns[Photo]"
+                      dataType="image"
+                      name="Photo" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].ExternalColumns[Valid From]"
+                      dataType="dbTimeStamp2"
+                      name="Valid From"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output].ExternalColumns[Valid To]"
+                      dataType="dbTimeStamp2"
+                      name="Valid To"
+                      scale="7" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[WWI Employee ID]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[WWI Employee ID]"
+                      name="WWI Employee ID" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[Employee]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[Employee]"
+                      name="Employee" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[Preferred Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[Preferred Name]"
+                      name="Preferred Name" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[Is Salesperson]"
+                      dataType="bool"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[Is Salesperson]"
+                      name="Is Salesperson" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[Photo]"
+                      dataType="image"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[Photo]"
+                      name="Photo" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[Valid From]"
+                      dataType="dbTimeStamp2"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[Valid From]"
+                      name="Valid From"
+                      scale="7" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[Valid To]"
+                      dataType="dbTimeStamp2"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[Valid To]"
+                      name="Valid To"
+                      scale="7" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFT - Load Table Dim Employee.Paths[OLE DB Source Output]"
+              endId="Package\DFT - Load Table Dim Employee\CNT - Rows Inserted.Inputs[Row Count Input 1]"
+              name="OLE DB Source Output"
+              startId="Package\DFT - Load Table Dim Employee\SRC - Person.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\DFT - Load Table Dim Employee.Paths[Row Count Output 1]"
+              endId="Package\DFT - Load Table Dim Employee\DST - Dim Employee.Inputs[OLE DB Destination Input]"
+              name="Row Count Output 1"
+              startId="Package\DFT - Load Table Dim Employee\CNT - Rows Inserted.Outputs[Row Count Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EXP - Set ExecutionBegan Time"
+      DTS:CreationName="Microsoft.ExpressionTask"
+      DTS:Description="Expression Task"
+      DTS:DTSID="{435BC48D-E010-4779-9AA7-4490893B8B6B}"
+      DTS:ExecutableType="Microsoft.ExpressionTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EXP - Set ExecutionBegan Time"
+      DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExpressionTask
+          Expression="@[User::ExecutionBegan] = (DT_STR, 4, 1252) DatePart(&quot;yyyy&quot;, GETDATE()) + &quot;-&quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;mm&quot;, GetDate()), 2) + &quot;-&quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;dd&quot;, GetDate()), 2) + &quot; &quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;hh&quot;, GetDate()), 2) + &quot;:&quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;mi&quot;, GetDate()), 2) + &quot;:&quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;ss&quot;, GetDate()), 2) + &quot;.000&quot;" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EXP - Set ExecutionEnded Time"
+      DTS:CreationName="Microsoft.ExpressionTask"
+      DTS:Description="Expression Task"
+      DTS:DTSID="{B1AFFFBC-DE97-4E49-8D63-C68CAC0C727C}"
+      DTS:ExecutableType="Microsoft.ExpressionTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EXP - Set ExecutionEnded Time"
+      DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExpressionTask
+          Expression="@[User::ExecutionEnded] = (DT_STR, 4, 1252) DatePart(&quot;yyyy&quot;, GETDATE()) + &quot;-&quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;mm&quot;, GetDate()), 2) + &quot;-&quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;dd&quot;, GetDate()), 2) + &quot; &quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;hh&quot;, GetDate()), 2) + &quot;:&quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;mi&quot;, GetDate()), 2) + &quot;:&quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;ss&quot;, GetDate()), 2) + &quot;.000&quot;" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SQL - Insert App-PackageLogger for Package Employee"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{EF786833-8840-4A18-9C3F-01A5E82B8BC8}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SQL - Insert App-PackageLogger for Package Employee"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4FE18A1E-5A7F-4AF5-B75B-D651E7C4CA03}"
+          SQLTask:SqlStatementSource="INSERT INTO [App].[PackageLogger] &#xA;(   PackageName&#xA;  , DataFlowName&#xA;  , SubflowInformation&#xA;  , ExecutionBegan&#xA; , ExecutionEnded&#xA;  , ExecutionStatus&#xA;  , RuntimeEnvironment&#xA;)&#xA;VALUES (?, ?, ?, ?, ?, 'Running', ?)&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::PackageName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="User::DataFlowName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="2"
+            SQLTask:DtsVariableName="User::SubFlowInformation"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="3"
+            SQLTask:DtsVariableName="User::ExecutionBegan"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="4"
+            SQLTask:DtsVariableName="User::ExecutionBegan"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="5"
+            SQLTask:DtsVariableName="$Project::RuntimeEnvironment"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SQL - Truncate Table Dim Employee"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{9DE16F64-D79C-40F7-8DB7-C3402551856C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SQL - Truncate Table Dim Employee"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4FE18A1E-5A7F-4AF5-B75B-D651E7C4CA03}"
+          SQLTask:SqlStmtSourceType="Variable"
+          SQLTask:SqlStatementSource="User::SqlTruncate" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SQL - Update App-PackageLogger for Package Employee"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{0AEDD4DD-CA30-4551-9D19-2C9E1F0633DB}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SQL - Update App-PackageLogger for Package Employee"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4FE18A1E-5A7F-4AF5-B75B-D651E7C4CA03}"
+          SQLTask:SqlStatementSource="update [App].[PackageLogger]&#xA;   set [RowsInserted]       = ?&#xA;     , [RowsUpdated]        = ?&#xA;     , [RowsDeleted]        = ?&#xA;     , [RowsUnaffected]     = ?&#xA;     , [ExecutionEnded]     = ?&#xA;     , [ExecutionStatus] = 'Complete'&#xA; where [PackageName]        = ?&#xA;   and [DataFlowName]       = ?&#xA;   and [SubFlowInformation] = ?&#xA;   and [ExecutionBegan]     = ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::RowsInserted"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="User::RowsUpdated"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="2"
+            SQLTask:DtsVariableName="User::RowsUpdated"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="3"
+            SQLTask:DtsVariableName="User::RowsUnaffected"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="4"
+            SQLTask:DtsVariableName="User::ExecutionEnded"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="5"
+            SQLTask:DtsVariableName="User::PackageName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="6"
+            SQLTask:DtsVariableName="User::DataFlowName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="7"
+            SQLTask:DtsVariableName="User::SubFlowInformation"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="8"
+            SQLTask:DtsVariableName="User::ExecutionBegan"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{69A6B9D1-8FF2-4888-86CA-6699FA57C875}"
+      DTS:From="Package\SQL - Truncate Table Dim Employee"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\DFT - Load Table Dim Employee" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{715C1FF4-5ECD-4CC8-9D2A-E09F139B410F}"
+      DTS:From="Package\EXP - Set ExecutionBegan Time"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\SQL - Insert App-PackageLogger for Package Employee" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{217CD53E-81EC-4232-94B1-1F1B59798AFB}"
+      DTS:From="Package\SQL - Insert App-PackageLogger for Package Employee"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\SQL - Truncate Table Dim Employee" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{A922C4E9-4499-474D-A4AE-9C9A0926EC91}"
+      DTS:From="Package\DFT - Load Table Dim Employee"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\EXP - Set ExecutionEnded Time" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{B78ABB83-F144-4238-96FA-77D5E476F29D}"
+      DTS:From="Package\EXP - Set ExecutionEnded Time"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\SQL - Update App-PackageLogger for Package Employee" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="346,42"
+          Id="Package\DFT - Load Table Dim Employee"
+          TopLeft="60,441" />
+        <NodeLayout
+          Size="346,42"
+          Id="Package\EXP - Set ExecutionBegan Time"
+          TopLeft="60,60" />
+        <NodeLayout
+          Size="346,42"
+          Id="Package\EXP - Set ExecutionEnded Time"
+          TopLeft="60,568" />
+        <NodeLayout
+          Size="346,42"
+          Id="Package\SQL - Insert App-PackageLogger for Package Employee"
+          TopLeft="60,187" />
+        <NodeLayout
+          Size="346,42"
+          Id="Package\SQL - Truncate Table Dim Employee"
+          TopLeft="60,314" />
+        <NodeLayout
+          Size="346,42"
+          Id="Package\SQL - Update App-PackageLogger for Package Employee"
+          TopLeft="60,695" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="233,102">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,85"
+              Start="0,0"
+              End="0,77.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="233,229">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,85"
+              Start="0,0"
+              End="0,77.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="233,483">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,85"
+              Start="0,0"
+              End="0,77.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="233,610">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,85"
+              Start="0,0"
+              End="0,77.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="Steps to use this template.&#xA;&#xA;1. Set the following variables:&#xA;&#xA;     DataFlowName - The name of the main data flow&#xA;&#xA;     PackageName - The name of the dtsx file for this package&#xA;&#xA;     SqlTruncate - The SQL Clause used to truncate the target table&#xA;&#xA;     SqlUpdateSourceSystem - Update to execute the source system stored proc for the table we are pulling from&#xA;&#xA;     SubFlowInformation - If the control flow goes down multiple paths, this can be used to indicate the current path. &#xA;                                         Otherwise, just use the name of the package without the dtsx extension&#xA;&#xA;2. Edit the names of the following control flow items to replace the word 'template' with the table or package name&#xA;&#xA;     SQL - Insert App-PackageLogger for Package template&#xA;&#xA;     SQL - Truncate Table template&#xA;&#xA;     SQL - Update Source System Table template&#xA;&#xA;     DFT - Load table template&#xA;&#xA;     SQL - Update App-PackageLogger for Package template&#xA;&#xA;&#xA;3. Edit the data flow to load the correct data for this table.&#xA;&#xA;4. Format the layout once package development is complete&#xA;&#xA;     If the Layout toolbar doesn't appear, right click in the toolbar area and pick the Layout toolbar&#xA;&#xA;     Use the mouse to select all the objects in the control flow&#xA;&#xA;     In the toolbar, choose the Align Lefts command&#xA;&#xA;     Next, choose the Make Same Width command&#xA;&#xA;     Now choose the Make Vertical Spacing Equal command&#xA;&#xA;     Repeat these steps for the Data Flow&#xA;&#xA;5. (Optional) You can remove this instructional annotation by right clicking and picking Delete Annotation."
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="644,742"
+          Id="5256e8ad-2e54-4c2d-90bb-e6003e63f540"
+          TopLeft="469,61" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="233,356">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,85"
+              Start="0,0"
+              End="0,77.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFT - Load Table Dim Employee">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph">
+        <AnnotationLayout
+          Text="Start with the OLEDB Source"
+          ParentId="Package\DFT - Load Table Dim Employee"
+          FontInfo="{assembly:Null}"
+          Size="199,40"
+          Id="99c0b37b-dc17-484e-90d7-d27feb06d0d5"
+          TopLeft="559,89" />
+        <AnnotationLayout
+          Text="Add a RowCount and assign to RowsInserted"
+          ParentId="Package\DFT - Load Table Dim Employee"
+          FontInfo="{assembly:Null}"
+          Size="266,40"
+          Id="6073360e-cf2d-42a8-aad0-16404f298c88"
+          TopLeft="559,189.5" />
+        <AnnotationLayout
+          Text="End with OLEDB Destination"
+          ParentId="Package\DFT - Load Table Dim Employee"
+          FontInfo="{assembly:Null}"
+          Size="178,40"
+          Id="3aa2c84a-2580-47b9-9037-f101262a5ecc"
+          TopLeft="559,290" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\DFT - Load Table Dim Employee\SRC - Person"
+          TopLeft="272,85" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\DFT - Load Table Dim Employee\CNT - Rows Inserted"
+          TopLeft="272,185" />
+        <EdgeLayout
+          Id="Package\DFT - Load Table Dim Employee.Paths[OLE DB Source Output]"
+          TopLeft="360.5,127">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58"
+              Start="0,0"
+              End="0,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\DFT - Load Table Dim Employee\DST - Dim Employee"
+          TopLeft="272,285" />
+        <EdgeLayout
+          Id="Package\DFT - Load Table Dim Employee.Paths[Row Count Output 1]"
+          TopLeft="360.5,227">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58"
+              Start="0,0"
+              End="0,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load Table Dim Employee\SRC - Person">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load Table Dim Employee\DST - Dim Employee">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

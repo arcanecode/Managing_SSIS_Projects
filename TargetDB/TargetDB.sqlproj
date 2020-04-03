@@ -105,8 +105,8 @@
     <PostDeploy Include="PostDeploymentScripts\Script.PostDeployment1.sql" />
   </ItemGroup>
   <ItemGroup>
-    <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
-      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac</HintPath>
+    <ArtifactReference Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac</HintPath>
       <SuppressMissingDependenciesErrors>True</SuppressMissingDependenciesErrors>
       <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
     </ArtifactReference>

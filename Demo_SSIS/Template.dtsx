@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Template"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{E864BEC7-8574-4C01-B29D-3F4E45078BFF}">
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{E553911F-A04F-4348-A38B-C101553CCAE4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -101,6 +101,15 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{4FE0A274-08CD-493C-B474-B8C3772C4D84}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SqlUpdateSourceSystem">
+      <DTS:VariableValue
+        DTS:DataType="8">EXEC [Integration].[GetTABLENAMEHEREUpdates] '2013-01-01 00:00:00', '9999-12-31 23:59:59'</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{283377C1-A1C7-4CA0-B680-732445B1606B}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
@@ -111,13 +120,13 @@
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\DFT - Load table"
+      DTS:refId="Package\DFT - Load Table template"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{05ba97c2-2fea-4cc6-9e8a-0bd95296d91d}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="DFT - Load table"
+      DTS:ObjectName="DFT - Load Table template"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -171,7 +180,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{4FE18A1E-5A7F-4AF5-B75B-D651E7C4CA03}"
-          SQLTask:SqlStatementSource="INSERT INTO [App].[PackageLogger] &#xA;(   PackageName&#xA;  , DataFlowName&#xA;  , SubflowInformation&#xA;  , ExecutionBegan&#xA; , ExecutionEnded&#xA;  , ExecutionStatus&#xA;)&#xA;VALUES (?, ?, ?, ?, ?, 'Running')&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:SqlStatementSource="INSERT INTO [App].[PackageLogger] &#xA;(   PackageName&#xA;  , DataFlowName&#xA;  , SubflowInformation&#xA;  , ExecutionBegan&#xA; , ExecutionEnded&#xA;  , ExecutionStatus&#xA;  , RuntimeEnvironment&#xA;)&#xA;VALUES (?, ?, ?, ?, ?, 'Running', ?)&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="User::PackageName"
@@ -202,17 +211,23 @@
             SQLTask:ParameterDirection="Input"
             SQLTask:DataType="129"
             SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="5"
+            SQLTask:DtsVariableName="$Project::RuntimeEnvironment"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
         </SQLTask:SqlTaskData>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\SQL - Truncate table"
+      DTS:refId="Package\SQL - Truncate Table template"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{34ff27d8-d541-42c9-8293-3dacee18c085}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="SQL - Truncate table"
+      DTS:ObjectName="SQL - Truncate Table template"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
@@ -296,13 +311,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\SQL - Update Source System Table"
+      DTS:refId="Package\SQL - Update Source System Table template"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{cfd09689-6167-4016-a3a2-2320f97f14f5}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="SQL - Update Source System Table"
+      DTS:ObjectName="SQL - Update Source System Table template"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
@@ -318,10 +333,10 @@
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{8ef91e1d-3e3c-4d82-966f-116716a2ed8b}"
-      DTS:From="Package\SQL - Truncate table"
+      DTS:From="Package\SQL - Truncate Table template"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\SQL - Update Source System Table" />
+      DTS:To="Package\SQL - Update Source System Table template" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
@@ -337,12 +352,12 @@
       DTS:From="Package\SQL - Insert App-PackageLogger for Package template"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
-      DTS:To="Package\SQL - Truncate table" />
+      DTS:To="Package\SQL - Truncate Table template" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
       DTS:DTSID="{964a67cb-fe78-4637-9acc-3e3622a80d13}"
-      DTS:From="Package\DFT - Load table"
+      DTS:From="Package\DFT - Load Table template"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
       DTS:To="Package\EXP - Set ExecutionEnded Time" />
@@ -358,10 +373,10 @@
       DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
       DTS:CreationName=""
       DTS:DTSID="{8e56fa05-8b9c-44a7-a78c-5407c6b37fed}"
-      DTS:From="Package\SQL - Update Source System Table"
+      DTS:From="Package\SQL - Update Source System Table template"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 5"
-      DTS:To="Package\DFT - Load table" />
+      DTS:To="Package\DFT - Load Table template" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -377,15 +392,23 @@
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="342,42"
+          Id="Package\DFT - Load Table template"
+          TopLeft="60,483.333333333333" />
+        <NodeLayout
+          Size="342,42"
           Id="Package\EXP - Set ExecutionBegan Time"
           TopLeft="60,60" />
+        <NodeLayout
+          Size="342,42"
+          Id="Package\EXP - Set ExecutionEnded Time"
+          TopLeft="60,589.166666666667" />
         <NodeLayout
           Size="342,42"
           Id="Package\SQL - Insert App-PackageLogger for Package template"
           TopLeft="60,165.833333333333" />
         <NodeLayout
           Size="342,42"
-          Id="Package\SQL - Truncate table"
+          Id="Package\SQL - Truncate Table template"
           TopLeft="60,271.666666666667" />
         <NodeLayout
           Size="342,42"
@@ -393,16 +416,30 @@
           TopLeft="60,695" />
         <NodeLayout
           Size="342,42"
-          Id="Package\EXP - Set ExecutionEnded Time"
-          TopLeft="60,589.166666666667" />
-        <NodeLayout
-          Size="342,42"
-          Id="Package\DFT - Load table"
-          TopLeft="60,483.333333333333" />
-        <NodeLayout
-          Size="342,42"
-          Id="Package\SQL - Update Source System Table"
+          Id="Package\SQL - Update Source System Table template"
           TopLeft="60,377.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="231,313.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63.833333333333"
+              Start="0,0"
+              End="0,56.333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="231,102">
@@ -492,28 +529,6 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="231,313.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,63.833333333333"
-              Start="0,0"
-              End="0,56.333333333333">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,56.333333333333" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
           TopLeft="231,419.5">
           <EdgeLayout.Curve>
@@ -535,33 +550,40 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="Steps to use this template.&#xD;&#xA;&#xD;&#xA;1. Set the following variables:&#xD;&#xA;&#xD;&#xA;     DataFlowName - The name of the main data flow&#xD;&#xA;&#xD;&#xA;     PackageName - The name of the dtsx file for this package&#xD;&#xA;&#xD;&#xA;     SqlTruncate - The SQL Clause used to truncate the target table&#xD;&#xA;&#xD;&#xA;     SqlUpdateSourceSystem - Update to execute the source system stored proc for the table we are pulling from&#xD;&#xA;&#xD;&#xA;     SubFlowInformation - If the control flow goes down multiple paths, this can be used to indicate the current path. &#xD;&#xA;                                         Otherwise, just use the name of the package without the dtsx extension&#xD;&#xA;&#xD;&#xA;2. Edit the names of the following control flow items to replace the word 'template' with the table or package name&#xD;&#xA;&#xD;&#xA;     SQL - Insert App-PackageLogger for Package template&#xD;&#xA;&#xD;&#xA;     SQL - Truncate Table template&#xD;&#xA;&#xD;&#xA;     SQL - Update Source System Table template&#xD;&#xA;&#xD;&#xA;     DFT - Load table template&#xD;&#xA;&#xD;&#xA;     SQL - Update App-PackageLogger for Package template&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;3. Edit the data flow to load the correct data for this table.&#xD;&#xA;&#xD;&#xA;4. Format the layout once package development is complete&#xD;&#xA;&#xD;&#xA;     If the Layout toolbar doesn't appear, right click in the toolbar area and pick the Layout toolbar&#xD;&#xA;&#xD;&#xA;     Use the mouse to select all the objects in the control flow&#xD;&#xA;&#xD;&#xA;     In the toolbar, choose the Align Lefts command&#xD;&#xA;&#xD;&#xA;     Next, choose the Make Same Width command&#xD;&#xA;&#xD;&#xA;     Now choose the Make Vertical Spacing Equal command&#xD;&#xA;&#xD;&#xA;     Repeat these steps for the Data Flow&#xD;&#xA;&#xD;&#xA;5. (Optional) You can remove this instructional annotation by right clicking and picking Delete Annotation."
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="644,742"
+          Id="5256e8ad-2e54-4c2d-90bb-e6003e63f540"
+          TopLeft="469,61" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\DFT - Load table">
+    design-time-name="Package\DFT - Load Table template">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <AnnotationLayout
           Text="Start with the OLEDB Source"
-          ParentId="Package\DFT - Load table"
+          ParentId="Package\DFT - Load Table template"
           FontInfo="{assembly:Null}"
-          Size="199,60"
+          Size="199,40"
           Id="99c0b37b-dc17-484e-90d7-d27feb06d0d5"
           TopLeft="559,89" />
         <AnnotationLayout
           Text="Add a RowCount and assign to RowsInserted"
-          ParentId="Package\DFT - Load table"
+          ParentId="Package\DFT - Load Table template"
           FontInfo="{assembly:Null}"
-          Size="266,60"
+          Size="266,40"
           Id="6073360e-cf2d-42a8-aad0-16404f298c88"
           TopLeft="559,189.5" />
         <AnnotationLayout
           Text="End with OLEDB Destination"
-          ParentId="Package\DFT - Load table"
+          ParentId="Package\DFT - Load Table template"
           FontInfo="{assembly:Null}"
-          Size="178,60"
+          Size="178,40"
           Id="3aa2c84a-2580-47b9-9037-f101262a5ecc"
           TopLeft="559,290" />
       </GraphLayout>

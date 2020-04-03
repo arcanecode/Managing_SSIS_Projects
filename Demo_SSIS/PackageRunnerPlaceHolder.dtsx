@@ -1,0 +1,43 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/2/2020 4:44:08 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ACDEV"
+  DTS:CreatorName="ACDEV\arcan"
+  DTS:DTSID="{F72C7829-F151-451A-A388-500D900BA583}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.93"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{4CAFF6CC-D692-4F7D-B796-64F6F54DA3A4}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables />
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <AnnotationLayout
+          Text="The master package uses an execute package task, the name of the package being supplied from a variable.&#xA;&#xA;The problem is you can't put in an execute package task without it pointint to a real package, at least initially, &#xA;otherwise it errors out.&#xA;&#xA;So this package doesn't do a darn thing but act as a placeholder for the EPT. &#xA;&#xA;Nothing to see here, move along, move along..."
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="609,152"
+          Id="39cc8e5b-1bfb-4cf2-bb8c-c7ce4f400466"
+          TopLeft="46,45" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

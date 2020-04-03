@@ -1,2 +1,24 @@
 ﻿<?xml version="1.0"?>
-<SSIS:Parameters xmlns:SSIS="www.microsoft.com/SqlServer/SSIS" />
+<SSIS:Parameters xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
+  <SSIS:Parameter
+    SSIS:Name="RuntimeEnvironment">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{c65e3225-c7f7-4e9f-bac2-4424517676e6}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value">Dev</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
+</SSIS:Parameters>

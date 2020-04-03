@@ -42,21 +42,13 @@ begin
          ( [LoadPath], [LoadOrder], [PackageName], [PackageDescription], [Parameter], [Notes] )  
   values
        -- Path 1
-         ( 1, 1, 'Employee.dtsx', 'Get Employee Data', '*' , null)
+         ( 1, 1, 'EmployeeV2.dtsx', 'Get Employee Data', '*' , null)
+       , ( 1, 2, 'PaymentMethod.dtsx', 'Get Employee Data', '*' , null)
+       , ( 1, 3, 'TransactionType.dtsx', 'Get Employee Data', '*' , null)
 
 
        -- Path 2
        , ( 2, 1, 'City.dtsx', 'Get Resource data from JRM source', '*', null )
-
-       -- Path 3
-
-       -- Path 4
-
-       -- Path 5
-
-       -- Path 6
-
-
 
   return 0
 

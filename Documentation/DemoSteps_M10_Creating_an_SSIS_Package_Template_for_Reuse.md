@@ -23,7 +23,7 @@ YourPackageName.dtsx| |The name you want to appear|100|The description of the pa
 Open the DtsProjectItems.vsdir file in notepad. For this demo, add the following line to the bottom of the file and save it.
 
 ```
-Template.dtsx| |Template Package|100|A package for creating other packages from| |21| |#44
+Template.dtsx| |Demo_SSIS Template Package|100|A package for creating other packages from| |21| |#44
 ```
 
 Note that some of the bars `|` have spaces between them.

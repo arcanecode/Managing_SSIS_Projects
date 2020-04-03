@@ -16,6 +16,7 @@ create table [App].[PackageLogger]
   , [PackageName]        varchar(256) not null
   , [DataFlowName]       varchar(256)
   , [SubFlowInformation] varchar(256)
+  , [RuntimeEnvironment] varchar(256)
   , [RowsInserted]       bigint
   , [RowsUpdated]        bigint
   , [RowsDeleted]        bigint
