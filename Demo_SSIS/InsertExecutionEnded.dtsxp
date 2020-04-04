@@ -1,0 +1,279 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="PackagePart"
+  DTS:CreationDate="4/3/2020 3:20:27 PM"
+  DTS:CreationName="Microsoft.DTSPackagePart"
+  DTS:CreatorComputerName="ACDEV"
+  DTS:CreatorName="ACDEV\arcan"
+  DTS:DTSID="{78A011DA-DD6F-459E-8571-A7A3F78733CF}"
+  DTS:ExecutableType="Microsoft.DTSPackagePart"
+  DTS:LastModifiedProductVersion="15.0.2000.93"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="InsertExecutionEnded"
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{35C7FBF5-6C41-404C-83B7-5137B231352A}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="PackagePart.ConnectionManagers[localhost.TargetDB_Dev]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5F0D9F13-D314-439B-8944-80ACCCAC35B1}"
+      DTS:ObjectName="localhost.TargetDB_Dev">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=TargetDB_Dev;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="PackagePart\SEQ - Insert Execution Ended"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{C43330E2-C115-4DF3-999C-29C50F8D20CB}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SEQ - Insert Execution Ended">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{197173D8-AB22-42CA-88F4-946CA86BDCFF}"
+          DTS:IncludeInDebugDump="2345"
+          DTS:Namespace="User"
+          DTS:ObjectName="IEE_DataFlowName">
+          <DTS:VariableValue
+            DTS:DataType="8">DataFlowName</DTS:VariableValue>
+        </DTS:Variable>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{98A7CDB8-8601-4A5D-AFA6-114C37DA29A7}"
+          DTS:IncludeInDebugDump="2345"
+          DTS:Namespace="User"
+          DTS:ObjectName="IEE_ExecutionBegan">
+          <DTS:VariableValue
+            DTS:DataType="8"
+            xml:space="preserve"></DTS:VariableValue>
+        </DTS:Variable>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{251C4C31-9DD8-4725-B6C9-45DD7D2D4814}"
+          DTS:IncludeInDebugDump="2345"
+          DTS:Namespace="User"
+          DTS:ObjectName="IEE_ExecutionEnded">
+          <DTS:VariableValue
+            DTS:DataType="8"
+            xml:space="preserve"></DTS:VariableValue>
+        </DTS:Variable>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{7A8B4CAF-E972-4BEC-90B5-957A8B53693E}"
+          DTS:IncludeInDebugDump="2345"
+          DTS:Namespace="User"
+          DTS:ObjectName="IEE_PackageName">
+          <DTS:VariableValue
+            DTS:DataType="8">PackageName</DTS:VariableValue>
+        </DTS:Variable>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{806334FF-2FE8-45E2-8840-C0D4A2C8EC48}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="User"
+          DTS:ObjectName="IEE_RowsDeleted">
+          <DTS:VariableValue
+            DTS:DataType="20">0</DTS:VariableValue>
+        </DTS:Variable>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{C2C2FE00-510D-4127-9469-897C630B9A50}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="User"
+          DTS:ObjectName="IEE_RowsInserted">
+          <DTS:VariableValue
+            DTS:DataType="20">0</DTS:VariableValue>
+        </DTS:Variable>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{3044AFCA-909A-4A13-ACB4-D2B696A74B4B}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="User"
+          DTS:ObjectName="IEE_RowsUnaffected">
+          <DTS:VariableValue
+            DTS:DataType="20">0</DTS:VariableValue>
+        </DTS:Variable>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{06E67FB7-3B92-4742-9FE3-963AFE44E750}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="User"
+          DTS:ObjectName="IEE_RowsUpdated">
+          <DTS:VariableValue
+            DTS:DataType="20">0</DTS:VariableValue>
+        </DTS:Variable>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{A62F7088-36C6-44D6-8C71-7AAC370910FE}"
+          DTS:IncludeInDebugDump="2345"
+          DTS:Namespace="User"
+          DTS:ObjectName="IEE_SubFlowInformation">
+          <DTS:VariableValue
+            DTS:DataType="8">SubFlowInformation</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="PackagePart\SEQ - Insert Execution Ended\EXP - Calculate Execution Ended Time"
+          DTS:CreationName="Microsoft.ExpressionTask"
+          DTS:Description="Expression Task"
+          DTS:DTSID="{7DCFC793-E384-4538-AE7F-BE3EF0904386}"
+          DTS:ExecutableType="Microsoft.ExpressionTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXP - Calculate Execution Ended Time"
+          DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExpressionTask
+              Expression="@[User::IEE_ExecutionEnded] = (DT_STR, 4, 1252) DatePart(&quot;yyyy&quot;, GETDATE()) + &quot;-&quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;mm&quot;, GetDate()), 2) + &quot;-&quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;dd&quot;, GetDate()), 2) + &quot; &quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;hh&quot;, GetDate()), 2) + &quot;:&quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;mi&quot;, GetDate()), 2) + &quot;:&quot; + Right(&quot;00&quot; + (DT_STR, 2, 1252) DatePart(&quot;ss&quot;, GetDate()), 2) + &quot;.000&quot;" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="PackagePart\SEQ - Insert Execution Ended\SQL - Update App-PackageLogger for Package"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{73ED303D-37B3-45C8-8546-9E46EF8BBAF7}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="SQL - Update App-PackageLogger for Package"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{5F0D9F13-D314-439B-8944-80ACCCAC35B1}"
+              SQLTask:SqlStatementSource="update [App].[PackageLogger]&#xA;   set [RowsInserted]       = ?&#xA;     , [RowsUpdated]        = ?&#xA;     , [RowsDeleted]        = ?&#xA;     , [RowsUnaffected]     = ?&#xA;     , [ExecutionEnded]     = ?&#xA;     , [ExecutionStatus] = 'Complete'&#xA; where [PackageName]        = ?&#xA;   and [DataFlowName]       = ?&#xA;   and [SubFlowInformation] = ?&#xA;   and [ExecutionBegan]     = ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::IEE_RowsInserted"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="User::IEE_RowsUpdated"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="2"
+                SQLTask:DtsVariableName="User::IEE_RowsDeleted"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="3"
+                SQLTask:DtsVariableName="User::IEE_RowsUnaffected"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="4"
+                SQLTask:DtsVariableName="User::IEE_ExecutionEnded"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="5"
+                SQLTask:DtsVariableName="User::IEE_PackageName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="6"
+                SQLTask:DtsVariableName="User::IEE_DataFlowName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="7"
+                SQLTask:DtsVariableName="User::IEE_SubFlowInformation"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="8"
+                SQLTask:DtsVariableName="User::IEE_ExecutionBegan"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="PackagePart\SEQ - Insert Execution Ended.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{3CE7933E-0FE8-4740-8252-13D7112133E2}"
+          DTS:From="PackagePart\SEQ - Insert Execution Ended\EXP - Calculate Execution Ended Time"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="PackagePart\SEQ - Insert Execution Ended\SQL - Update App-PackageLogger for Package" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <PackagePart
+    design-time-name="PackagePart">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="297,42"
+          Id="PackagePart\SEQ - Insert Execution Ended\EXP - Calculate Execution Ended Time"
+          TopLeft="26,19" />
+        <NodeLayout
+          Size="297,42"
+          Id="PackagePart\SEQ - Insert Execution Ended\SQL - Update App-PackageLogger for Package"
+          TopLeft="26,197" />
+        <EdgeLayout
+          Id="PackagePart\SEQ - Insert Execution Ended.PrecedenceConstraints[Constraint]"
+          TopLeft="174.5,61">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,136"
+              Start="0,0"
+              End="0,128.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,128.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="359,292"
+          Size="359,335"
+          Id="PackagePart\SEQ - Insert Execution Ended"
+          TopLeft="124,49" />
+      </GraphLayout>
+    </LayoutInfo>
+  </PackagePart>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -10,5 +10,5 @@ However, we have included these in the documenation as they may aid in stimulati
 
 [Module 4 - Deploying to the Catalog](DemoSteps_M04_Deploying_to_the_Catalog.md)
 
-[Module 10 - Creating an SSIS Package Template for Re-Use](DemoSteps_M10_Creating_an_SSIS_Package_Template_for_Reuse.md)
+[Module 11 - Creating an SSIS Package Template for Re-Use](DemoSteps_M11_Creating_an_SSIS_Package_Template_for_Reuse.md)
 

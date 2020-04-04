@@ -9,13 +9,13 @@
 * [Module 3 - Creating and Managing the Catalog](#m03)
 * [Module 4 - Deploying to the Catalog](#m04)
 * [Module 5 - Using Canned Dashboard Reports](#m05)
-* [Module 6 - Configuring a Project or Package](#m06)
-* [Module 7 - Using Environments](#m07)
-* [Module 8 - Using the Catalog for Logging](#m08)
-* [Module 9 - Developing Custom Logging](#m09)
-* [Module 10 - Creating an SSIS Package Template for Re-use](#m10)
-* [Module 11 - Creating Reusable Units of an SSIS Package Workflow](#m11)
-* [Module 12 - Implementing Parallelism for Faster Loading in SSIS](#m12)
+* [Module 6 - Implementing Parallelism for Faster Loading in SSIS](#m06)
+* [Module 7 - Configuring a Project or Package](#m07)
+* [Module 8 - Managing Variables and Connection Strings through Environments](#m08)
+* [Module 9 - Using the Catalog for Logging](#m09)
+* [Module 10 - Developing Custom Logging](#m10)
+* [Module 11 - Creating an SSIS Package Template for Re-use](#m11)
+* [Module 12 - Creating Reusable Units of an SSIS Package Workflow](#m12)
 * [Module 13 - Summary](#m13)
 
 <a name="documentoverview"></a>
@@ -105,7 +105,22 @@ Target Time: 10:00
 [Back to Table of Contents](#toc)
 
 <a name="m06"></a>
-## Module 6 - Configuring a Project or Package
+## Module 6 - Implementing Parallelism for Faster Loading in SSIS
+
+### Learning Objectives
+
+* Learn how to create a master package and run other packages in parallel
+
+### Demo Description
+
+Students will be shown how to create a master package, then use it to run other packages in parallel.
+
+Target Time: 15:00
+
+[Back to Table of Contents](#toc)
+
+<a name="m07"></a>
+## Module 7 - Configuring a Project or Package
 
 ### Learning Objectives
 
@@ -121,8 +136,8 @@ Target Time: 10:00
 
 [Back to Table of Contents](#toc)
 
-<a name="m07"></a>
-## Module 7 - Using Environments
+<a name="m08"></a>
+## Module 8 - Managing Variables and Connection Strings through Environments
 
 ### Learning Objectives
 
@@ -136,8 +151,8 @@ Target Time: 10:00
 
 [Back to Table of Contents](#toc)
 
-<a name="m08"></a>
-## Module 8 - Using the Catalog for Logging
+<a name="m09"></a>
+## Module 9 - Using the Catalog for Logging
 
 ### Learning Objectives
 
@@ -152,8 +167,8 @@ Target Time: 10:00
 
 [Back to Table of Contents](#toc)
 
-<a name="m09"></a>
-## Module 9 - Developing Custom Logging
+<a name="m10"></a>
+## Module 10 - Developing Custom Logging
 
 ### Learning Objectives
 
@@ -167,8 +182,8 @@ Target Time: 15:00
 
 [Back to Table of Contents](#toc)
 
-<a name="m10"></a>
-## Module 10 - Creating an SSIS Package Template for Re-use
+<a name="m11"></a>
+## Module 11 - Creating an SSIS Package Template for Re-use
 
 ### Learning Objectives
 
@@ -183,8 +198,8 @@ Target Time: 15:00
 
 [Back to Table of Contents](#toc)
 
-<a name="m11"></a>
-## Module 11 - Creating Reusable Units of an SSIS Package Workflow
+<a name="m12"></a>
+## Module 12 - Creating Reusable Units of an SSIS Package Workflow
 
 ### Learning Objectives
 
@@ -194,21 +209,6 @@ Target Time: 15:00
 ### Demo Description
 
 Students will first learn how to create a package part. They will then see how to use that package part in a new package.
-
-Target Time: 15:00
-
-[Back to Table of Contents](#toc)
-
-<a name="m12"></a>
-## Module 12 - Implementing Parallelism for Faster Loading in SSIS
-
-### Learning Objectives
-
-* Learn how to create a master package and run other packages in parallel
-
-### Demo Description
-
-Students will be shown how to create a master package, then use it to run other packages in parallel.
 
 Target Time: 15:00
 

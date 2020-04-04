@@ -1,4 +1,4 @@
-﻿# Module 10 - Creating an SSIS Package Template for Re-use
+﻿# Module 11 - Creating an SSIS Package Template for Re-use
 
 The following instructions apply to the Visual Studio 2019 Community Edition. For other versions the instructions may vary slightly.
 

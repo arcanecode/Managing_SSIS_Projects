@@ -14,7 +14,7 @@
     <None Include="$(MSBuildThisFileDirectory)DemoSteps.md" />
     <None Include="$(MSBuildThisFileDirectory)DemoSteps_M03_Creating_and_Managing_The_Catalog.md" />
     <None Include="$(MSBuildThisFileDirectory)DemoSteps_M04_Deploying_to_the_Catalog.md" />
-    <None Include="$(MSBuildThisFileDirectory)DemoSteps_M10_Creating_an_SSIS_Package_Template_for_Reuse.md" />
+    <None Include="$(MSBuildThisFileDirectory)DemoSteps_M11_Creating_an_SSIS_Package_Template_for_Reuse.md" />
     <None Include="$(MSBuildThisFileDirectory)MarkdownCheatSheet.md" />
     <None Include="$(MSBuildThisFileDirectory)ReadMe.md" />
     <None Include="$(MSBuildThisFileDirectory)ToolsRequired.md" />
