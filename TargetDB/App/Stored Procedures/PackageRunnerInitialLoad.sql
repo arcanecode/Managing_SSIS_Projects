@@ -29,7 +29,7 @@
 --
 --  See Also
 --    App.PackageRunner Table. 
---    Master.dtsx package in the AldenOneIS project
+--    Master.dtsx package
 --
 /*-----------------------------------------------------------------------------------------------*/
 create procedure [App].[PackageRunnerLoad]
@@ -43,12 +43,12 @@ begin
   values
        -- Path 1
          ( 1, 1, 'EmployeeV2.dtsx', 'Get Employee Data', '*' , null)
-       , ( 1, 2, 'PaymentMethod.dtsx', 'Get Employee Data', '*' , null)
-       , ( 1, 3, 'TransactionType.dtsx', 'Get Employee Data', '*' , null)
+       , ( 1, 2, 'PaymentMethod.dtsx', 'Get PaymentMethod Data', '*' , null)
+       , ( 1, 3, 'TransactionType.dtsx', 'Get Transaction Type Data', '*' , null)
 
 
        -- Path 2
-       , ( 2, 1, 'City.dtsx', 'Get Resource data from JRM source', '*', null )
+       , ( 2, 1, 'City.dtsx', 'Get City Data', '*', null )
 
   return 0
 

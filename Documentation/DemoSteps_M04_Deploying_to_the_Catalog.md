@@ -22,13 +22,16 @@
 ## Demo 2 - Execute the project
 
 1. Open SSMS
-2. Navigate to and expand the *Integration Services Catalogs* branch.
-3. Expand the *SSISDB* branch.
-4. Point out, then expand the *Demo_SSIS* branch.
-5. Expand the *Projects* branch.
-6. Expand the *Demo_SSIS* branch.
-7. Expand the *Packages* branch.
-8. Right click on *Employee.dtsx*. In the menu, click _Execute_. Note that it will run the package, using the same connection strings and variables that were setup in the package.
+2. Expand the TargetDB_Dev database, then its tables.
+3. Right click on Dimension.Employee, pick Select Top 1000 Rows to show the table is empty.
+4. Navigate to and expand the *Integration Services Catalogs* branch.
+5. Expand the *SSISDB* branch.
+6. Point out, then expand the *Demo_SSIS* branch.
+7. Expand the *Projects* branch.
+8. Expand the *Demo_SSIS* branch.
+9. Expand the *Packages* branch.
+10. Right click on *Employee.dtsx*. In the menu, click _Execute_. Note that it will run the package, using the same connection strings and variables that were setup in the package.
+11. Re-run the Select Top 1000 rows query to show the employee table is now populated.
 
 ## Up Next
 
