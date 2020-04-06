@@ -12,6 +12,7 @@
     <None Include="$(MSBuildThisFileDirectory)AboutMe.md" />
     <None Include="$(MSBuildThisFileDirectory)CourseOutline.md" />
     <None Include="$(MSBuildThisFileDirectory)DemoSteps.md" />
+    <None Include="$(MSBuildThisFileDirectory)DemoSteps_M02_Course_Overview.md" />
     <None Include="$(MSBuildThisFileDirectory)DemoSteps_M03_Creating_and_Managing_The_Catalog.md" />
     <None Include="$(MSBuildThisFileDirectory)DemoSteps_M04_Deploying_to_the_Catalog.md" />
     <None Include="$(MSBuildThisFileDirectory)DemoSteps_M05_Using_Canned_Dashboard_Reports.md" />
@@ -21,7 +22,7 @@
     <None Include="$(MSBuildThisFileDirectory)DemoSteps_M09_Using_the_Catalog_for_Logging.md" />
     <None Include="$(MSBuildThisFileDirectory)DemoSteps_M10_Developing_Custom_Logging.md" />
     <None Include="$(MSBuildThisFileDirectory)DemoSteps_M11_Creating_an_SSIS_Package_Template_for_Reuse.md" />
-    <None Include="$(MSBuildThisFileDirectory)DemoSteps_M12_Creating_Reusable_Units_of_an_SSIS_Package_Workflow.mdDemoSteps_M12_Creating_Reusable_Units_of_an_SSIS_Package_Workflow.md" />
+    <None Include="$(MSBuildThisFileDirectory)DemoSteps_M12_Creating_Reusable_Units_of_an_SSIS_Package_Workflow.md" />
     <None Include="$(MSBuildThisFileDirectory)DemoSteps_M13_Summary.md" />
     <None Include="$(MSBuildThisFileDirectory)MarkdownCheatSheet.md" />
     <None Include="$(MSBuildThisFileDirectory)ReadMe.md" />
