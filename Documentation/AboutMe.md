@@ -1,6 +1,7 @@
 ﻿# About ArcaneCode
 
 ## Table of Contents<a name="toc"></a>
+
 * [Biography](#bio)
 * [Social Media](#social)
 * [Pluralsight Courses](#pluralsight)
@@ -9,6 +10,7 @@
 * [YouTube](#youtube)
 
 ## Biography<a name="bio"></a>
+
 Robert C. Cain is the owner of Arcane Training and Consulting, LLC.
 
 Robert creates online courses for Pluralsight (see below) and has coauthored five books, in addition to his YouTube activity. He was also a Microsoft MVP from 2008-2018.
@@ -110,4 +112,3 @@ Robert also has a personal YouTube channel for a variety of fun topics such as M
 [Back to Table of Contents](#toc)
 
 **Copyright (c) 2008-2020, All Rights Reserved**
-
