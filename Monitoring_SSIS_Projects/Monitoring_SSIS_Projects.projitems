@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>90fb3775-d0a3-4864-9411-e9c5e4840cf9</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Monitoring_SSIS_Projects</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Executive_Dashboard.sql" />
+    <None Include="$(MSBuildThisFileDirectory)Get_Last_5_Packages_Executed.sql" />
+    <None Include="$(MSBuildThisFileDirectory)Get_List_of_Executed_Tasks.sql" />
+    <None Include="$(MSBuildThisFileDirectory)Get_List_of_Package_Executions_Start_and_End_Times.sql" />
+    <None Include="$(MSBuildThisFileDirectory)Get_Messages_Generated_During_Package_Execution.sql" />
+    <None Include="$(MSBuildThisFileDirectory)Get_Numer_Of_Package_Executions_And_Average_Run_Time.sql" />
+    <None Include="$(MSBuildThisFileDirectory)Get_Top_5_Longest_Running_Packages.sql" />
+    <None Include="$(MSBuildThisFileDirectory)List_All_Packages_In_The_Catalog.sql" />
+    <None Include="$(MSBuildThisFileDirectory)ReadMe.md" />
+  </ItemGroup>
+</Project>

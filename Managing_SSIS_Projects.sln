@@ -16,8 +16,11 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TargetDB", "TargetDB\Target
 EndProject
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Demo_SSIS", "Demo_SSIS\Demo_SSIS.dtproj", "{5150E5EE-034C-4960-A34E-C19BCB528C46}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Monitoring_SSIS_Projects", "Monitoring_SSIS_Projects\Monitoring_SSIS_Projects.shproj", "{90FB3775-D0A3-4864-9411-E9C5E4840CF9}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Monitoring_SSIS_Projects\Monitoring_SSIS_Projects.projitems*{90fb3775-d0a3-4864-9411-e9c5e4840cf9}*SharedItemsImports = 13
 		Documentation\Documentation.projitems*{ad5f071b-6040-4f45-84dd-242a80667049}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
