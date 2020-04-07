@@ -2,9 +2,9 @@
 
 ## Demo 1 - Open with Master.dtsx
 
-1. Explain the method is to use a package to run other packages. 
-2. Some of the objects here are to support custom logging, which we will cover more in a later module. 
-3. For example, the first two get the package start time and write it to our custom log. 
+1. Explain the method is to use a package to run other packages.
+2. Some of the objects here are to support custom logging, which we will cover more in a later module.
+3. For example, the first two get the package start time and write it to our custom log.
 4. The real part of paralellism begins with the SQL Path 1/2 Queue tasks. Let's look at the table that drives this.
 
 ## Demo 2 - The Table
@@ -25,23 +25,23 @@ select [PackageName], [Parameter] from [App].[PackageRunner] where [LoadPath] = 
 
 ### Demo 3.1 - The SQL Task
 
-1. Open the SQL task
-2. Point out the Result Set is set to full result set
+1. Open the SQL task.
+2. Point out the Result Set is set to full result set.
 3. Click on the Result Set tab.
 4. Show how it is assigned to the variable path1_Runner, which is of type Object.
-5. Close the Sql Task Editor
+5. Close the Sql Task Editor.
 
 ### Demo 3.2 - The ForEach Loop Container
 
-1. Open the For Each Loop Container
-2. Click on Collection
-3. The Enumerator is Foreach ADO Enumerator
-4. The ADO Object Source Variable is set to the path1_Runner object variable we retrieved in the Execute SQL Task
-5. We are using all rows in the first table
-6. Click on Variable Mappings
+1. Open the For Each Loop Container.
+2. Click on Collection.
+3. The Enumerator is Foreach ADO Enumerator.
+4. The ADO Object Source Variable is set to the path1_Runner object variable we retrieved in the Execute SQL Task.
+5. We are using all rows in the first table.
+6. Click on _Variable Mappings_.
 7. The first column in the result set, column 0, is placed in the path1_PackageName variable.
-8. The second column, column 1, is copied into the path1_Parameter
-9. Click cancel to close the FELC
+8. The second column, column 1, is copied into the path1_Parameter.
+9. Click cancel to close the FELC.
 
 ### Demo 3.3 - Execute SQL Task (in FELC)
 
@@ -49,14 +49,14 @@ select [PackageName], [Parameter] from [App].[PackageRunner] where [LoadPath] = 
 
 ### Demo 3.4 - Execute Package Task
 
-1. Open the Execute Package Task
-2. Click on the Package tab
-3. Reference type is Project Reference, another package in this project
+1. Open the Execute Package Task.
+2. Click on the _Package_ tab.
+3. Reference type is Project Reference, another package in this project.
 4. When the EPT is created, you have to have a package for it to reference. Hence we have an empty package called PackageRunnerPlaceHolder.dtsx. If you open the package it is empty, it doesn't actually do anything but allow us to use the EPT and replace the name of the package to run at execution time.
 5. Click on the Expressions tab.
 6. Click the arrow beside Expressions to expand it.
 7. Show how the PackageName is repalced with the path1_PackageName variable.
-8. Click Cancel to close
+8. Click _Cancel_ to close.
 
 ### Demo 3.5 - Remaining Logging Tasks
 
@@ -72,8 +72,16 @@ select [PackageName], [Parameter] from [App].[PackageRunner] where [LoadPath] = 
 
 ## Demo 6 - Run the package
 
-1. Switch to SSMS
-2. Navigate to the Master package
-3. Execute it
-4. After it runs, say OK to open the overview report
-5. In the report, show each package executed in the list
+1. Switch to SSMS.
+2. Navigate to the Master package.
+3. Execute it.
+4. After it runs, say OK to open the overview report.
+5. In the report, show each package executed in the list.
+
+## Up Next
+
+In this module, you saw how to create what is known as a master package. This package allows us to run multiple packages in parallel. While we only used two paths, you could easily expand it to 3, 4, or more paths. Be aware, it is up to you to determine the order in which packages load and bear in mind any dependancies. 
+
+In the next module, we will see how to configure a project in SSMS to override defaults that were created during the package design.
+
+[Return to the DemoSteps document](DemoSteps.md)

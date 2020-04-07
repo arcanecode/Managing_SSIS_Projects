@@ -21,7 +21,7 @@
 <a name="documentoverview"></a>
 ## Document Overview
 
-Below is the overview of the Pluralsight course, Managing SSIS Projects. Note the module numbers are not used in the course video, they are for reference. In addition, they are used in the naming of the demo files in the SSIS project.
+Below is the overview of the Pluralsight course, __Managing SSIS Projects__. Note the module numbers are not used in the course video, they are for reference. In addition, they are used in the naming of the demo files in the SSIS project.
 
 [Back to Table of Contents](#toc)
 

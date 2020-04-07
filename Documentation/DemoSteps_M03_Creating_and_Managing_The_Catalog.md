@@ -6,29 +6,31 @@
 2. In the object explorer locate the branch that reads *Integration Services Catalogs*.
 3. Click the + button beside it, and you will see nothing appear.
 4. Right click on the Integration Services Catalogs branch.
-5. In the menu, pick *Create Catalog...*
-6. Place a check mark beside *Enable CLR Integration*
+5. In the menu, pick _Create Catalog..._
+6. Place a check mark beside _Enable CLR Integration_
 7. If you plan to allow automatic execution of SSIS at SQL Server startup, place a check mark beside that option.
 8. Accept the default name of SSISDB for the catalog.
-9. Enter, then retype a password. *Make sure you write this down, or save it in your password manager!*
+9. Enter, then retype a password. _Make sure you write this down, or save it in your password manager!_
 10 Accept the remaining defaults, and click the OK button.
 
 ## Demo 2 - Backup the SSISDB
 
 Prior to doing this, you will:
-1. Need to launch SSMS in Admin mode
-2. In file explorer, navigate to the folder *C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup*. When you get to the backup folder, you may be prompted you don't have permission. Grant your user ID permissions to the folder.
+
+1. Need to launch SSMS in Admin mode.
+2. In file explorer, navigate to the folder _C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup_. When you get to the backup folder, you may be prompted you don't have permission. Grant your user ID permissions to the folder.
 
 To backup:
+
 1. Under the Integration Services Catalogs branch, you now see SSISDB. This is the interface by which you can navigate to your deployed SSIS Projects. We will see more on this later in the course.
-2. Move to Databases and expand (you may need to refresh if it is already been expanded.)
+2. Move to Databases and expand (you may need to refresh if it is already been expanded).
 3. Start by backing up the database.
 
-Using the menus: 
+Using the menus:
 
-* Right click on the database.
-* In the menu, pick Tasks, then Backup.
-* Click OK to do the backup. (Make sure to change the backup location to the backups folder.)
+1. Right click on the database.
+2. In the menu, pick Tasks, then Backup.
+3. Click OK to do the backup. (Make sure to change the backup location to the backups folder.)
 
 Using a script:
 
@@ -79,6 +81,8 @@ RESTORE MASTER KEY FROM FILE= 'c:\temp\DemoTestKey'
 GO
 ```
 
-If you are restoring the database to a new server, the Microsoft Docs has a good article on all the steps involved at:
+---
 
-[Backup, Restore, and Move the SSIS Catalog](https://docs.microsoft.com/en-us/sql/integration-services/backup-restore-and-move-the-ssis-catalog?view=sql-server-2014&viewFallbackFrom=sql-server-ver15)
+> If you are restoring the database to a new server, the Microsoft Docs has a good article on all the steps involved at [Backup, Restore, and Move the SSIS Catalog](https://docs.microsoft.com/en-us/sql/integration-services/backup-restore-and-move-the-ssis-catalog?view=sql-server-2014&viewFallbackFrom=sql-server-ver15)
+
+[Return to the DemoSteps document](DemoSteps.md)

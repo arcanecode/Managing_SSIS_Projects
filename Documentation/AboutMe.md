@@ -1,15 +1,19 @@
 ﻿# About ArcaneCode
 
-## Table of Contents<a name="toc"></a>
+<a name="toc"></a>
+## Table of Contents
 
-* [Biography](#bio)
-* [Social Media](#social)
-* [Pluralsight Courses](#pluralsight)
-* [Red Gate's Simple Talk](#redgate)
-* [Books](#books)
-* [YouTube](#youtube)
+- [About ArcaneCode](#about-arcanecode)
+  - [Table of Contents](#table-of-contents)
+  - [Biography](#biography)
+  - [Social Media](#social-media)
+  - [Pluralsight Courses](#pluralsight-courses)
+  - [Redgate's SimpleTalk](#redgates-simpletalk)
+  - [Books](#books)
+  - [YouTube](#youtube)
 
-## Biography<a name="bio"></a>
+<a name="bio"></a>
+## Biography
 
 Robert C. Cain is the owner of Arcane Training and Consulting, LLC.
 
@@ -25,7 +29,8 @@ Prior to his work in the BI world, Robert worked as a software developer using C
 
 [Back to Table of Contents](#toc)
 
-## Social Media<a name="social"></a>
+<a name="social"></a>
+## Social Media
 
 Twitter: [@ArcaneCode](http://twitter.com/arcanecode)
 
@@ -37,7 +42,8 @@ Github: [ArcaneCode](https://github.com/arcanecode)
 
 [Back to Table of Contents](#toc)
 
-## Pluralsight Courses<a name="pluralsight"></a>
+<a name="pluralsight"></a>
+## Pluralsight Courses
 
 [Getting Started with PowerShell Core for Linux and macOS](https://www.pluralsight.com/courses/getting-started-powershell-core-linux-macos)
 
@@ -77,13 +83,15 @@ Github: [ArcaneCode](https://github.com/arcanecode)
 
 [Back to Table of Contents](#toc)
 
-## Redgate's SimpleTalk<a name="redgate"></a>
+<a name="redgate"></a>
+## Redgate's SimpleTalk
 
 Robert is a contributor to RedGate's SimpleTalk site. You can find all of his articles at: [http://arcanecode.red](http://arcanecode.red)
 
 [Back to Table of Contents](#toc)
 
-## Books<a name="books"></a>
+<a name="books"></a>
+## Books
 
 Robert has co-authored five books on a variety of technical subjects. Note that for some of these titles the e-book version is only available via the publishers site.
 
@@ -99,7 +107,8 @@ Professional SQL Server 2014 Administration [Publisher's Site](http://www.wrox.c
 
 [Back to Table of Contents](#toc)
 
-## YouTube<a name="youtube"></a>
+<a name="youtube"></a>
+## YouTube
 
 Robert's company channel, Arcane Training and Consulting, can be found at:
 
@@ -111,4 +120,4 @@ Robert also has a personal YouTube channel for a variety of fun topics such as M
 
 [Back to Table of Contents](#toc)
 
-**Copyright (c) 2008-2020, All Rights Reserved**
+__Copyright (c) 2008-2020, All Rights Reserved__

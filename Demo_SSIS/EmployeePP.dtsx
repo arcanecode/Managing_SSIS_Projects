@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="EmployeePP"
   DTS:PackageType="5"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{10100413-9DE7-43B6-9532-3CBFCC365B41}">
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{60DEAC14-B137-4870-B863-B7420A314F08}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -633,7 +633,7 @@
       <DTS:Variables>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{E70FC5EA-7B96-411B-A91D-071852927877}"
+          DTS:DTSID="{801AA382-E6C7-44C9-9E9E-245A9E32CB7F}"
           DTS:EvaluateAsExpression="True"
           DTS:Expression="@[User::DataFlowName]"
           DTS:IncludeInDebugDump="2345"
@@ -644,7 +644,7 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{283B831C-EA09-4D9C-93A2-5D21327BA851}"
+          DTS:DTSID="{0C4D1FFC-11B4-4CF8-B577-A56E856356C2}"
           DTS:EvaluateAsExpression="True"
           DTS:Expression="@[User::ExecutionBegan]"
           DTS:IncludeInDebugDump="2345"
@@ -656,7 +656,7 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{73EAA23E-2ECA-4AC0-85ED-EC12E8413951}"
+          DTS:DTSID="{5D900B9A-4E92-432B-85D5-1A7D5312163D}"
           DTS:EvaluateAsExpression="True"
           DTS:Expression="@[User::PackageName]"
           DTS:IncludeInDebugDump="2345"
@@ -667,7 +667,7 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{BB55358E-CE65-4CD2-B73D-C1348824F42B}"
+          DTS:DTSID="{2BCC5676-431E-4DA7-9954-A2785D4E4D6D}"
           DTS:EvaluateAsExpression="True"
           DTS:Expression="@[$Project::RuntimeEnvironment]"
           DTS:IncludeInDebugDump="2345"
@@ -678,19 +678,19 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{983BFB64-7DE0-49B3-A941-674B3C044D94}"
+          DTS:DTSID="{554D621A-3449-4AF7-917B-F1F254C23E84}"
           DTS:EvaluateAsExpression="True"
-          DTS:Expression="@[User::SubflowInformation]"
+          DTS:Expression="@[User::IEB_SubflowInformation]"
           DTS:IncludeInDebugDump="2345"
           DTS:Namespace="User"
           DTS:ObjectName="IEB_SubflowInformation">
           <DTS:VariableValue
-            DTS:DataType="8">Employee</DTS:VariableValue>
+            DTS:DataType="8">SubflowInformation</DTS:VariableValue>
         </DTS:Variable>
       </DTS:Variables>
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{4FE18A1E-5A7F-4AF5-B75B-D651E7C4CA03}"
+          SQLTask:Connection="{019F5FF0-3B23-4D60-B2DB-BD0D77D1B00B}"
           SQLTask:SqlStatementSource="INSERT INTO [App].[PackageLogger] &#xA;(   PackageName&#xA;  , DataFlowName&#xA;  , SubflowInformation&#xA;  , ExecutionBegan&#xA; , ExecutionEnded&#xA;  , ExecutionStatus&#xA;  , RuntimeEnvironment&#xA;)&#xA;VALUES (?, ?, ?, ?, ?, 'Running', ?)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -742,7 +742,7 @@
       <DTS:Variables>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{DD543ECE-0F91-4220-92A2-5C3DE5C0576E}"
+          DTS:DTSID="{BF491857-1D9A-4D29-A36C-FC36E5A08E90}"
           DTS:EvaluateAsExpression="True"
           DTS:Expression="@[User::DataFlowName]"
           DTS:IncludeInDebugDump="2345"
@@ -753,7 +753,7 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{721D1A35-0107-472F-9856-687422EB5EC0}"
+          DTS:DTSID="{AB4DD0B7-EAF7-4EA6-8429-EC49D3E3238F}"
           DTS:EvaluateAsExpression="True"
           DTS:Expression="@[User::ExecutionBegan]"
           DTS:IncludeInDebugDump="2345"
@@ -765,7 +765,7 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{B7DDC696-EB2F-48CE-A3BD-3221AFFC6E30}"
+          DTS:DTSID="{5C9F253B-DD60-4D82-9638-F0D6EC077A52}"
           DTS:IncludeInDebugDump="2345"
           DTS:Namespace="User"
           DTS:ObjectName="IEE_ExecutionEnded">
@@ -775,7 +775,7 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{5F8CF846-89D4-4DAE-8F95-1BFFFA235346}"
+          DTS:DTSID="{A06D5C6D-550A-40AF-8671-40623151742E}"
           DTS:EvaluateAsExpression="True"
           DTS:Expression="@[User::PackageName]"
           DTS:IncludeInDebugDump="2345"
@@ -786,7 +786,7 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{65EC5C50-85D3-4FEF-99F7-D88A292D1F17}"
+          DTS:DTSID="{EC6B4CC2-FBB2-4A1C-92CD-298D70C81877}"
           DTS:EvaluateAsExpression="True"
           DTS:Expression="@[User::RowsDeleted]"
           DTS:IncludeInDebugDump="2345"
@@ -797,9 +797,9 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{971CD1F7-B0E2-4EBF-AAB3-8A42EF473FA9}"
+          DTS:DTSID="{E6A5D1A7-E8EB-4BE5-91CE-9983FEEFE86E}"
           DTS:EvaluateAsExpression="True"
-          DTS:Expression="@[User::RowsInserted]"
+          DTS:Expression="@[User::IEE_RowsInserted]"
           DTS:IncludeInDebugDump="2345"
           DTS:Namespace="User"
           DTS:ObjectName="IEE_RowsInserted">
@@ -808,7 +808,7 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{78C84770-0F58-4AB7-8ADF-24333CD25BD3}"
+          DTS:DTSID="{153375AA-AAED-419C-9778-91C9AC728E6B}"
           DTS:EvaluateAsExpression="True"
           DTS:Expression="@[User::RowsUnaffected]"
           DTS:IncludeInDebugDump="2345"
@@ -819,7 +819,7 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{3436DC5E-2490-4838-AED4-4B2E7A37B50C}"
+          DTS:DTSID="{F4676094-788E-4DB8-B8AF-830CFEAF0FA5}"
           DTS:EvaluateAsExpression="True"
           DTS:Expression="@[User::RowsUpdated]"
           DTS:IncludeInDebugDump="2345"
@@ -830,7 +830,7 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{5BF80AF2-8B5F-4166-B496-80B5DF329DD8}"
+          DTS:DTSID="{1B5EA51B-081A-459F-BE71-06484C0A8579}"
           DTS:EvaluateAsExpression="True"
           DTS:Expression="@[User::SubflowInformation]"
           DTS:IncludeInDebugDump="2345"
@@ -845,7 +845,7 @@
           DTS:refId="Package\InsertExecutionEnded\EXP - Calculate Execution Ended Time"
           DTS:CreationName="Microsoft.ExpressionTask"
           DTS:Description="Expression Task"
-          DTS:DTSID="{31C2C31E-D2DD-4351-8F4C-67AF023CF5A9}"
+          DTS:DTSID="{C505C8B5-5A32-4F5D-9CDD-F966732D9348}"
           DTS:ExecutableType="Microsoft.ExpressionTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="EXP - Calculate Execution Ended Time"
@@ -861,7 +861,7 @@
           DTS:refId="Package\InsertExecutionEnded\SQL - Update App-PackageLogger for Package"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{1977CA34-7226-4C1D-A58D-591FE3888D49}"
+          DTS:DTSID="{61FA414C-3600-472D-8627-F3285048722B}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="SQL - Update App-PackageLogger for Package"
@@ -870,7 +870,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{4FE18A1E-5A7F-4AF5-B75B-D651E7C4CA03}"
+              SQLTask:Connection="{96A0CA86-1D8B-49B6-872E-EEAD8AD20BA1}"
               SQLTask:SqlStatementSource="update [App].[PackageLogger]&#xA;   set [RowsInserted]       = ?&#xA;     , [RowsUpdated]        = ?&#xA;     , [RowsDeleted]        = ?&#xA;     , [RowsUnaffected]     = ?&#xA;     , [ExecutionEnded]     = ?&#xA;     , [ExecutionStatus] = 'Complete'&#xA; where [PackageName]        = ?&#xA;   and [DataFlowName]       = ?&#xA;   and [SubFlowInformation] = ?&#xA;   and [ExecutionBegan]     = ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -934,7 +934,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\InsertExecutionEnded.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{FA9839E8-9805-4079-AC25-FF52E0FD0F5E}"
+          DTS:DTSID="{FABBAA7E-1CF7-4561-A581-152E912582F3}"
           DTS:From="Package\InsertExecutionEnded\EXP - Calculate Execution Ended Time"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -962,22 +962,6 @@
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint]"
-      DTS:CreationName=""
-      DTS:DTSID="{AAC5045D-67BA-4D5C-8DB5-63D2D348DEB8}"
-      DTS:From="Package\EXP - Set ExecutionBegan Time"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint"
-      DTS:To="Package\InsertExecutionBegan" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
-      DTS:CreationName=""
-      DTS:DTSID="{5EB3971E-8083-4D85-BF39-2855913431C5}"
-      DTS:From="Package\InsertExecutionBegan"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 1"
-      DTS:To="Package\SQL - Truncate Table Dim Employee" />
-    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
       DTS:DTSID="{E2FD0AC1-1BBE-40FB-BB73-28524CCBADD3}"
@@ -986,13 +970,29 @@
       DTS:ObjectName="Constraint 2"
       DTS:To="Package\DFT - Load Table Dim Employee" />
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:refId="Package.PrecedenceConstraints[{81005EE1-0E4D-4B48-92F3-498A301B5D6A\}]"
+      DTS:CreationName=""
+      DTS:DTSID="{AAC5045D-67BA-4D5C-8DB5-63D2D348DEB8}"
+      DTS:From="Package\EXP - Set ExecutionBegan Time"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="{81005EE1-0E4D-4B48-92F3-498A301B5D6A}"
+      DTS:To="Package\InsertExecutionBegan" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[{C7D72EEB-4A8D-4856-B4C0-B826E92C2659\}]"
       DTS:CreationName=""
       DTS:DTSID="{96EEB9D4-9C1E-4181-8C7E-3CA6FA870A1D}"
       DTS:From="Package\DFT - Load Table Dim Employee"
       DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 3"
+      DTS:ObjectName="{C7D72EEB-4A8D-4856-B4C0-B826E92C2659}"
       DTS:To="Package\InsertExecutionEnded" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[{FA3FE2D5-29A9-4953-AC8E-A47B0ABEA9B8\}]"
+      DTS:CreationName=""
+      DTS:DTSID="{5EB3971E-8083-4D85-BF39-2855913431C5}"
+      DTS:From="Package\InsertExecutionBegan"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="{FA3FE2D5-29A9-4953-AC8E-A47B0ABEA9B8}"
+      DTS:To="Package\SQL - Truncate Table Dim Employee" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -1007,109 +1007,39 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="346,42"
-          Id="Package\EXP - Set ExecutionBegan Time"
-          TopLeft="210,84" />
-        <NodeLayout
-          Size="346,42"
-          Id="Package\InsertExecutionBegan"
-          TopLeft="210,189" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="383,126">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,63"
-              Start="0,0"
-              End="0,55.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,55.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="346,42"
-          Id="Package\SQL - Truncate Table Dim Employee"
-          TopLeft="210,310" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="383,231">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,79"
-              Start="0,0"
-              End="0,71.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,71.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="346,42"
+          Size="308,42"
           Id="Package\DFT - Load Table Dim Employee"
-          TopLeft="210,424" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="383,352">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,72"
-              Start="0,0"
-              End="0,64.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,64.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="175.5,353.5" />
         <NodeLayout
-          Size="297,42"
+          Size="308,42"
+          Id="Package\EXP - Set ExecutionBegan Time"
+          TopLeft="175.5,47.5" />
+        <NodeLayout
+          Size="308,42"
+          Id="Package\InsertExecutionBegan"
+          TopLeft="175.5,149.5" />
+        <NodeLayout
+          Size="258,42"
           Id="Package\InsertExecutionEnded\EXP - Calculate Execution Ended Time"
-          TopLeft="26,19" />
+          TopLeft="25,5.5" />
         <NodeLayout
           Size="297,42"
           Id="Package\InsertExecutionEnded\SQL - Update App-PackageLogger for Package"
-          TopLeft="26,197" />
+          TopLeft="5.50000000000003,107.5" />
         <EdgeLayout
           Id="Package\InsertExecutionEnded.PrecedenceConstraints[Constraint]"
-          TopLeft="174.5,61">
+          TopLeft="154,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,136"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,128.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,128.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1121,24 +1051,94 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="359,292"
-          Size="359,335"
+          PanelSize="308,204"
+          Size="308,247"
           Id="Package\InsertExecutionEnded"
-          TopLeft="209,555" />
+          TopLeft="175.5,455.5" />
+        <NodeLayout
+          Size="308,42"
+          Id="Package\SQL - Truncate Table Dim Employee"
+          TopLeft="175.5,251.5" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="385.75,466">
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="329.5,293.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,89"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,81.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,81.5" />
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[{81005EE1-0E4D-4B48-92F3-498A301B5D6A\}]"
+          TopLeft="329.5,89.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[{FA3FE2D5-29A9-4953-AC8E-A47B0ABEA9B8\}]"
+          TopLeft="329.5,191.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[{C7D72EEB-4A8D-4856-B4C0-B826E92C2659\}]"
+          TopLeft="329.5,395.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

@@ -2,21 +2,21 @@
 
 In the slides, you will have learned that SSIS has several built in levels for logging. In here we'll look at examples of four, and how the report changes depending on the level.
 
-The will then see how to query the logs directly. 
+The will then see how to query the logs directly.
 
 ## Demo 1 - Basic Logging
 
 1. Go to the Master package, right click and pick Execute.
 2. Select the Test environment at the bottom.
-3. Click the _Advanced_ tab.
+3. Click the __Advanced__ tab.
 4. Call attention to the Logging Level, and hit the drop down.
-5. Explain we'll be looking at several of these, for now leave on Basic and click OK to run the package. 
+5. Explain we'll be looking at several of these, for now leave on Basic and click OK to run the package.
 6. When prompted, open the Overview Report.
-7. When it finishes running, click View Messages. The messages are the logged information.
-8. Scroll down to show the messages. 
+7. When it finishes running, click __View Messages__. The messages are the logged information.
+8. Scroll down to show the messages.
 9. In the messages, point out why having good names for each task is important, in the log it displays the task name.
 10. Pre/Post validate messages indicate it is inspecting the tasks to ensure properties are set correctly. Not missing DB connections, etc.
-11. Pre/Post execute messages indicate a task is about to start, or has completed. 
+11. Pre/Post execute messages indicate a task is about to start, or has completed.
 12. The columns returned are as follows:
 
 | Column | Value |
@@ -32,20 +32,20 @@ When there are errors, the information here can help pinpoint what task a packag
 
 ## Demo 2 - Performance Logging
 
-1. Rerun the package, this time going to the Advanced tab and picking a logging level of _Performance_.
+1. Rerun the package, this time going to the Advanced tab and picking a logging level of __Performance__.
 2. Once the package completes, go to the View Messages.
 3. Show that under Performance, it does minimal logging and identifies only items that may have a performance impact.
 
 ## Demo 3 - Verbose Logging
 
-1. Rerun the package, this time going to the Advanced tab and picking a logging level of _Verbose_.
+1. Rerun the package, this time going to the Advanced tab and picking a logging level of __Verbose__.
 2. Once the package completes, go to the View Messages.
 3. Show that under Verbose, it does an extreme amount of logging.
 4. At the bottom, show that while Basic logging produced a 2 page report, Verbose created 115 pages of logs.
 5. Sometimes when you have an error and are having problems tracking it down, verbose may be the only way to find it.
 6. Explain that Verbose logging will adversely impact package run time, causing a package to take longer to run due to all the logging it is doing.
 
-Mention there are two other logging levels. None will not log anything, which makes the package run the fastest it can, but if an error occurs it will be very difficult to diagnose.
+There are two other logging levels. None will not log anything, which makes the package run the fastest it can, but if an error occurs it will be very difficult to diagnose.
 
 The other option is for custom SSIS logging, however this can be a bit complex to setup. Instead, in this course in a later module we will show how to setup your own custom logging directly in the packages.
 
@@ -53,7 +53,7 @@ The other option is for custom SSIS logging, however this can be a bit complex t
 
 1. Start the demo with SSISDB database expanded to the views.
 2. Close any open tabs.
-3. Open the Monitor_SSIS_Projects SSMS solution in SSMS.
+3. Open the Monitor_SSIS_Projects SSMS solution in SSMS. (Note, this solution file is not included in the demos, but the scripts are.)
 4. Show the large number of views setup for your use. To make them easier to learn, several queries have been included in the project. Copy these into SSMS (or create your own SSMS solution) to use them.
 
 ### Demo 4.1 - List All Pacackags In The Catalog
@@ -65,7 +65,7 @@ The other option is for custom SSIS logging, however this can be a bit complex t
 ### Demo 4.2 - Get List of Package Executions Start and End Times
 
 1. This query gets the start and end times for each package exectued by you in SSIS. It also includes the status (Success, Fail, etc)
-2. Note that in this example it only includes the Master package. This is because Master is the only one we explictly executed. It in turned executed the others, and while they were logged the actual execution of each was not. 
+2. Note that in this example it only includes the Master package. This is because Master is the only one we explictly executed. It in turned executed the others, and while they were logged the actual execution of each was not.
 3. This is the one drawback to the Master package, however we can solve this with our own custom logging which we will demonstrate in a later module.
 
 ### Demo 4.3 - Get Number of Package Executions and Average Runtime
@@ -80,7 +80,7 @@ The other option is for custom SSIS logging, however this can be a bit complex t
 
 ### Demo 4.5 - Get List of Executed Tasks
 
-1. Here we can dive down to the indivudal task level. 
+1. Here we can dive down to the indivudal task level.
 2. We can also use WHERE clauses to filter for a specific package.
 
 ### Demo 4.6 - Get Last 5 Packages Executed
@@ -101,8 +101,10 @@ The other option is for custom SSIS logging, however this can be a bit complex t
 
 ### Up Next
 
-In the first part of this module we saw how the logging levels affected what was written to the SSIS logs. 
+In the first part of this module we saw how the logging levels affected what was written to the SSIS logs.
 
 In the latter half we saw how to query those logs directly using some queries. You can customize these queries for your own use, or use them as a basis for some SSRS reports.
 
 In the next module, we'll look to see how to author your own custom logging inside the packages.
+
+[Return to the DemoSteps document](DemoSteps.md)

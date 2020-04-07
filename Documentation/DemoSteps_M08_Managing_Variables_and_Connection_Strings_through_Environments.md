@@ -7,7 +7,7 @@
 3. Select _Create Environment_ in the menu.
 4. In the dialog give it the name __Prod__.
 5. Provide a description, such as __Production Variables__.
-6. Click _OK_ to create the environment.
+6. Click __OK__ to create the environment.
 
 ## Demo 2 - Add variables to the Environment
 
@@ -20,9 +20,8 @@
 | --- | --- | --- | --- |
 |RuntimeEnv |String |Runtime Environment Name |Prod |
 
-Leave the Senstive box unchecked for this and all other variables added in this module.
-
-Next, add two more variables with the following properties.
+5. Leave the Senstive box unchecked for this and all other variables added in this module.
+6. Next, add two more variables with the following properties.
 
 | Name | Type | Description | Value |
 | --- | --- | --- | --- |
@@ -39,11 +38,11 @@ Next, add two more variables with the following properties.
 6. Click on the _Parameters_ page.
 7. Click the `...` besdie the RuntimeEnvironment variable.
 8. In the dialog, take the _Use environment variable_ option.
-9. Use the drop down list to pick __RuntimeEnv__. 
+9. Use the drop down list to pick __RuntimeEnv__.
 10. Mention that while you can name the variable the same name as the property, and it's often easier to do so, here we used different names just to illustrate it is possible.
 11. Click OK to close the Set Parameter Value dialog.
 12. Click the _Connection Managers_ tab.
-13. Select the first connection string for the TargetDB. 
+13. Select the first connection string for the TargetDB.
 14. Repeating the above steps, click the `...` beside ConnectionString, change to use an environment variable, pick ConnectionStr, and click OK to close.
 15. Repeat for the InitialCatalog, using InitCatalog for the variable.
 16. Repeat these steps for the connection managers attached to the EmployeePP parts.
@@ -57,7 +56,7 @@ Next, add two more variables with the following properties.
 4. In the drop down, pick the __Prod__ environment then click __OK__ to run the package.
 5. When asked, open the overview report.
 6. In the lower right under Parameters Used, point out the connection string and runtime environment parameter.
-7. Explain that off screen I am going to repeat the above steps to create environments for Dev and Test, alterning the values appropriately. Stress it is important I use the same variable names for all three environments. 
+7. Explain that off screen I am going to repeat the above steps to create environments for Dev and Test, alterning the values appropriately. Stress it is important I use the same variable names for all three environments.
 
 ## Offscreen: Create the environments
 
@@ -71,7 +70,6 @@ Offscreen, create the new environments with the following values.
 | Dev |RuntimeEnv |String |Runtime Environment Name |Dev |
 | Dev |ConnectonStr | String | Connection String |Data Source=localhost;Initial Catalog=TargetDB_Dev;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;|
 | Dev |InitCatalog |String |Initial Catalog (database) |TargetDB_Dev |
-
 
 ## Demo 5 - Execute using an alternate environment
 
@@ -88,4 +86,6 @@ Offscreen, create the new environments with the following values.
 
 ## Up Next
 
-In this module we saw how to configure SSIS to run packages with multiple environments. 
+In this module we saw how to configure SSIS to run packages with multiple environments.
+
+[Return to the DemoSteps document](DemoSteps.md)

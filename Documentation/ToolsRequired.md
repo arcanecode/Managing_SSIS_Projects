@@ -2,39 +2,32 @@
 
 This is list of the tools required in order to run the demos in this course's project.
 
-Inside Visual Studio Menu
-Extensions
-Manage Extensions
+## SQL Server 2019
 
-Search for SQL Server Integration Services
-Click the Download button
-It will open your browser
+* SQL Server 2019 Developer Edition
+* When installing be sure to include SQL Server Integration Services
+* ALso install SQL Server Management Studio
 
-OR in your browser go to https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects
-Either way, download and run the installer.
-Note, you will need to close visual studio 2019 in order to install the project extension.
+## Visual Studio 2019
 
-Inside Visual Studio Menu
-Extensions
-Manage Extensions
+* Visual Studio 2019 Community Edition
+* During the install select these workloads
+  - ASP.NET and Web Development
+  - Data storage and Processing
+  - Data science and analytical applications
+* After installation, add these Extensions
+  - [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects)
+  - Markdown Editor
 
-Search for Markdown
-Download the "Markdown Editor"
+To add an extension, Inside Visual Studio select the menu Extensions, then Manage Extensions. In the dialog search for your extensions, for example "Markdown Editor".
 
-Once installed you'll need to restart VS2019.
+Once your extensions are installed you'll need to restart VS2019.
 
+## Optional
 
-Optional
 These are not used in this course, but if you want a full suite of tools for BI development, you should also install:
-Microsoft SQL Server Analysis Services Projects
-Microsoft Reporting Services Projects
 
+* Microsoft SQL Server Analysis Services Projects
+* Microsoft Reporting Services Projects
 
-Visual Studio Workloads
-ASP.NET and Web Development
-Data storage and Processing
-Data science and analytical applications
-
-
-GitHub addin for VS
-https://visualstudio.github.com/
+As well as their extensions in Visual Studio.

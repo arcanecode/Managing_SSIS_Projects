@@ -9,3 +9,5 @@ The demos are very simple, we'll just open the source solution and show the vari
 1. Start with the Documentation project, giving a quick overview of the contents.
 2. Show the source and target database projects, particularly how to deploy them.
 3. Show the SSIS Project. Give a quick overview of the packages.
+
+[Return to the DemoSteps document](DemoSteps.md)
