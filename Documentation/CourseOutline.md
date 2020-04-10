@@ -4,8 +4,8 @@
 
 * [Document Overview](#documentoverview)
 * [Course Goals](#coursegoals)
-* [Module 1 - Course Trailer](#m01)
-* [Module 2 - Course Overview](#m02)
+* [Module 1 - Course Overview](#m01)
+* [Module 2 - Introduction](#m02)
 * [Module 3 - Creating and Managing the Catalog](#m03)
 * [Module 4 - Deploying to the Catalog](#m04)
 * [Module 5 - Using Canned Dashboard Reports](#m05)
@@ -35,14 +35,14 @@ In addition, students will learn techniques such as package templates and packag
 [Back to Table of Contents](#toc)
 
 <a name="m01"></a>
-## Module 1 - Course Trailer
+## Module 1 - Course Overview
 
 This module isn't part of the actual course. It is the overview trailer you likely viewed, which got you interested in this course.
 
 [Back to Table of Contents](#toc)
 
 <a name="m02"></a>
-## Module 2- Course Overview
+## Module 2- Introduction
 
 ### Learning Objectives
 

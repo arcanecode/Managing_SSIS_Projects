@@ -6,9 +6,9 @@ These are used as a reminder of the steps that need to be done during the filmin
 
 However, we have included these in the documenation as they may aid in stimulating your memory as you manage your own SSIS Projects.
 
-Note, there is no Module 1, it is the short "learn more" introduction to let you know what this course will contain.
+Note, there is no Module 1, it is the short course overview to let you know what this course will contain.
 
-[Module 2 - Course Overview](DemoSteps_M02_Course_Overview.md)
+[Module 2 - Introduction](DemoSteps_M02_Introduction.md)
 
 [Module 3 - Creating and Managing the Catalog](DemoSteps_M03_Creating_and_Managing_The_Catalog.md)
 

@@ -12,7 +12,7 @@
     <None Include="$(MSBuildThisFileDirectory)AboutMe.md" />
     <None Include="$(MSBuildThisFileDirectory)CourseOutline.md" />
     <None Include="$(MSBuildThisFileDirectory)DemoSteps.md" />
-    <None Include="$(MSBuildThisFileDirectory)DemoSteps_M02_Course_Overview.md" />
+    <None Include="$(MSBuildThisFileDirectory)DemoSteps_M02_Introduction.md" />
     <None Include="$(MSBuildThisFileDirectory)DemoSteps_M03_Creating_and_Managing_The_Catalog.md" />
     <None Include="$(MSBuildThisFileDirectory)DemoSteps_M04_Deploying_to_the_Catalog.md" />
     <None Include="$(MSBuildThisFileDirectory)DemoSteps_M05_Using_Canned_Dashboard_Reports.md" />
