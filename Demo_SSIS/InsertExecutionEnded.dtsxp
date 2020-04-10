@@ -10,8 +10,9 @@
   DTS:LastModifiedProductVersion="15.0.2000.93"
   DTS:LocaleID="1033"
   DTS:ObjectName="InsertExecutionEnded"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{35C7FBF5-6C41-404C-83B7-5137B231352A}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{91DE6CF5-6968-4F71-A0E8-9201622DA041}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>

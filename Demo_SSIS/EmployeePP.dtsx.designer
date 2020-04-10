@@ -11,9 +11,9 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="EmployeePP"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{60DEAC14-B137-4870-B863-B7420A314F08}"
-  DTS:ProtectionLevel="1">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{A1F19CB4-21C7-4A1B-B777-EBA63778A7A1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers />
@@ -608,7 +608,7 @@
       DTS:ObjectName="InsertExecutionBegan">
       <DTS:ObjectData>
         <PackagePart:InstanceData xmlns:PackagePart="www.microsoft.com/SqlServer/Dts/PackagePart"
-          PackagePart:VersionGUID="{8121A742-9B5F-49F9-9B35-ACCD8BD96164}">
+          PackagePart:VersionGUID="{7ED92E85-96BA-4F57-B21B-FD814B0C17E7}">
           <PackagePart:Connections>
             <PackagePart:Connection
               PackagePart:ID="{019F5FF0-3B23-4D60-B2DB-BD0D77D1B00B}"
@@ -637,7 +637,7 @@
       DTS:ObjectName="InsertExecutionEnded">
       <DTS:ObjectData>
         <PackagePart:InstanceData xmlns:PackagePart="www.microsoft.com/SqlServer/Dts/PackagePart"
-          PackagePart:VersionGUID="{35C7FBF5-6C41-404C-83B7-5137B231352A}">
+          PackagePart:VersionGUID="{91DE6CF5-6968-4F71-A0E8-9201622DA041}">
           <PackagePart:Connections>
             <PackagePart:Connection
               PackagePart:ID="{96A0CA86-1D8B-49B6-872E-EEAD8AD20BA1}"
@@ -687,29 +687,29 @@
       DTS:ObjectName="Constraint 2"
       DTS:To="Package\DFT - Load Table Dim Employee" />
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[{81005EE1-0E4D-4B48-92F3-498A301B5D6A\}]"
-      DTS:CreationName=""
-      DTS:DTSID="{AAC5045D-67BA-4D5C-8DB5-63D2D348DEB8}"
-      DTS:From="Package\EXP - Set ExecutionBegan Time"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="{81005EE1-0E4D-4B48-92F3-498A301B5D6A}"
-      DTS:To="Package\InsertExecutionBegan" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[{C7D72EEB-4A8D-4856-B4C0-B826E92C2659\}]"
-      DTS:CreationName=""
-      DTS:DTSID="{96EEB9D4-9C1E-4181-8C7E-3CA6FA870A1D}"
-      DTS:From="Package\DFT - Load Table Dim Employee"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="{C7D72EEB-4A8D-4856-B4C0-B826E92C2659}"
-      DTS:To="Package\InsertExecutionEnded" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[{FA3FE2D5-29A9-4953-AC8E-A47B0ABEA9B8\}]"
+      DTS:refId="Package.PrecedenceConstraints[{3362BCB1-2939-4730-B4B8-E4FF1C6FB0EB\}]"
       DTS:CreationName=""
       DTS:DTSID="{5EB3971E-8083-4D85-BF39-2855913431C5}"
       DTS:From="Package\InsertExecutionBegan"
       DTS:LogicalAnd="True"
-      DTS:ObjectName="{FA3FE2D5-29A9-4953-AC8E-A47B0ABEA9B8}"
+      DTS:ObjectName="{3362BCB1-2939-4730-B4B8-E4FF1C6FB0EB}"
       DTS:To="Package\SQL - Truncate Table Dim Employee" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[{388789DE-B1E2-413C-8126-922830CD880D\}]"
+      DTS:CreationName=""
+      DTS:DTSID="{96EEB9D4-9C1E-4181-8C7E-3CA6FA870A1D}"
+      DTS:From="Package\DFT - Load Table Dim Employee"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="{388789DE-B1E2-413C-8126-922830CD880D}"
+      DTS:To="Package\InsertExecutionEnded" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[{A5803C0C-BBC9-41DD-A2EB-105C73295FEA\}]"
+      DTS:CreationName=""
+      DTS:DTSID="{AAC5045D-67BA-4D5C-8DB5-63D2D348DEB8}"
+      DTS:From="Package\EXP - Set ExecutionBegan Time"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="{A5803C0C-BBC9-41DD-A2EB-105C73295FEA}"
+      DTS:To="Package\InsertExecutionBegan" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -724,17 +724,17 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="308,42"
+          Size="231,42"
           Id="Package\DFT - Load Table Dim Employee"
-          TopLeft="175.5,353.5" />
+          TopLeft="44.0000000000001,311.5" />
         <NodeLayout
-          Size="308,42"
+          Size="227,42"
           Id="Package\EXP - Set ExecutionBegan Time"
-          TopLeft="175.5,47.5" />
+          TopLeft="46,5.5" />
         <NodeLayout
-          Size="308,42"
+          Size="182,42"
           Id="Package\InsertExecutionBegan"
-          TopLeft="175.5,149.5" />
+          TopLeft="68.5000000000001,107.5" />
         <EdgeLayout
           Id="Package\InsertExecutionEnded.PrecedenceConstraints[Constraint]"
           TopLeft="154,47.5">
@@ -761,16 +761,16 @@
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="308,204"
-          Size="308,247"
+          Size="308,248"
           Id="Package\InsertExecutionEnded"
-          TopLeft="175.5,455.5" />
+          TopLeft="5.50000000000009,413.5" />
         <NodeLayout
-          Size="308,42"
+          Size="250,42"
           Id="Package\SQL - Truncate Table Dim Employee"
-          TopLeft="175.5,251.5" />
+          TopLeft="34.5000000000001,209.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="329.5,293.5">
+          TopLeft="159.5,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -791,8 +791,8 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[{81005EE1-0E4D-4B48-92F3-498A301B5D6A\}]"
-          TopLeft="329.5,89.5">
+          Id="Package.PrecedenceConstraints[{3362BCB1-2939-4730-B4B8-E4FF1C6FB0EB\}]"
+          TopLeft="159.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -813,8 +813,8 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[{FA3FE2D5-29A9-4953-AC8E-A47B0ABEA9B8\}]"
-          TopLeft="329.5,191.5">
+          Id="Package.PrecedenceConstraints[{A5803C0C-BBC9-41DD-A2EB-105C73295FEA\}]"
+          TopLeft="159.5,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -835,8 +835,8 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[{C7D72EEB-4A8D-4856-B4C0-B826E92C2659\}]"
-          TopLeft="329.5,395.5">
+          Id="Package.PrecedenceConstraints[{388789DE-B1E2-413C-8126-922830CD880D\}]"
+          TopLeft="159.5,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"

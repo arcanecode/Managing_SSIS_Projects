@@ -11,8 +11,9 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Employee"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{413E1A20-0B67-4182-BD42-93297285BC67}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{9C71FB60-34E1-4912-9A78-CE3790EEE68A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -577,14 +578,6 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\DFT - Load Employee\DST - Dim_Employee">
     <Properties>
       <Property>
@@ -594,6 +587,14 @@
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

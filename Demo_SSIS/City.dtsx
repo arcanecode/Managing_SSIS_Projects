@@ -11,8 +11,9 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="City"
   DTS:PackageType="5"
-  DTS:VersionBuild="19"
-  DTS:VersionGUID="{9DB9D5CD-DBA9-450D-B3FF-81E92AD13E0A}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{D35789EB-AA19-4CFC-AAD5-7F4CC64BB86F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>

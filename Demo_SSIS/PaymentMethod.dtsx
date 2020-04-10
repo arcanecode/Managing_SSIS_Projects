@@ -11,8 +11,9 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Template"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{D2FF16CB-5FD8-4357-8279-D1A0B51D0F14}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{461AE985-310E-4DB3-83F7-8A9671CC4269}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -1016,7 +1017,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Table Dim Payment Method\SRC - Payment Method">
+    design-time-name="Package\DFT - Load Table Dim Payment Method\DST - Dim Payment Method">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1029,7 +1030,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Table Dim Payment Method\DST - Dim Payment Method">
+    design-time-name="Package\DFT - Load Table Dim Payment Method\SRC - Payment Method">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
