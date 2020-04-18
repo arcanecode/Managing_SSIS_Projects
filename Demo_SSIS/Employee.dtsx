@@ -12,8 +12,8 @@
   DTS:ObjectName="Employee"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{9C71FB60-34E1-4912-9A78-CE3790EEE68A}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{B08CB36A-DDFD-402C-A3E6-7FEA7928AA48}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -109,47 +109,47 @@
                       cachedDataType="i4"
                       cachedName="WWI Employee ID"
                       externalMetadataColumnId="Package\DFT - Load Employee\DST - Dim_Employee.Inputs[OLE DB Destination Input].ExternalColumns[WWI Employee ID]"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[WWI Employee ID]" />
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[WWI Employee ID]" />
                     <inputColumn
                       refId="Package\DFT - Load Employee\DST - Dim_Employee.Inputs[OLE DB Destination Input].Columns[Employee]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Employee"
                       externalMetadataColumnId="Package\DFT - Load Employee\DST - Dim_Employee.Inputs[OLE DB Destination Input].ExternalColumns[Employee]"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Employee]" />
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Employee]" />
                     <inputColumn
                       refId="Package\DFT - Load Employee\DST - Dim_Employee.Inputs[OLE DB Destination Input].Columns[Preferred Name]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Preferred Name"
                       externalMetadataColumnId="Package\DFT - Load Employee\DST - Dim_Employee.Inputs[OLE DB Destination Input].ExternalColumns[Preferred Name]"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Preferred Name]" />
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Preferred Name]" />
                     <inputColumn
                       refId="Package\DFT - Load Employee\DST - Dim_Employee.Inputs[OLE DB Destination Input].Columns[Photo]"
                       cachedDataType="image"
                       cachedName="Photo"
                       externalMetadataColumnId="Package\DFT - Load Employee\DST - Dim_Employee.Inputs[OLE DB Destination Input].ExternalColumns[Photo]"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Photo]" />
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Photo]" />
                     <inputColumn
                       refId="Package\DFT - Load Employee\DST - Dim_Employee.Inputs[OLE DB Destination Input].Columns[Valid From]"
                       cachedDataType="dbTimeStamp2"
                       cachedName="Valid From"
                       cachedScale="7"
                       externalMetadataColumnId="Package\DFT - Load Employee\DST - Dim_Employee.Inputs[OLE DB Destination Input].ExternalColumns[Valid From]"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Valid From]" />
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Valid From]" />
                     <inputColumn
                       refId="Package\DFT - Load Employee\DST - Dim_Employee.Inputs[OLE DB Destination Input].Columns[Valid To]"
                       cachedDataType="dbTimeStamp2"
                       cachedName="Valid To"
                       cachedScale="7"
                       externalMetadataColumnId="Package\DFT - Load Employee\DST - Dim_Employee.Inputs[OLE DB Destination Input].ExternalColumns[Valid To]"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Valid To]" />
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Valid To]" />
                     <inputColumn
                       refId="Package\DFT - Load Employee\DST - Dim_Employee.Inputs[OLE DB Destination Input].Columns[Is Salesperson]"
                       cachedDataType="bool"
                       cachedName="Is Salesperson"
                       externalMetadataColumnId="Package\DFT - Load Employee\DST - Dim_Employee.Inputs[OLE DB Destination Input].ExternalColumns[Is Salesperson]"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Is Salesperson]" />
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Is Salesperson]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -222,11 +222,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees"
+              refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
               description="OLE DB Source"
-              name="SRC - Person Filtered for Emplyees"
+              name="SRC - Person Filtered for Employees"
               usesDispositions="true"
               version="7">
               <properties>
@@ -279,7 +279,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Connections[OleDbConnection]"
+                  refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Connections[OleDbConnection]"
                   connectionManagerID="{1A0D0032-C347-43A1-8ED5-C1179E96F602}:external"
                   connectionManagerRefId="Project.ConnectionManagers[localhost.SourceDB]"
                   description="The OLE DB runtime connection used to access the database."
@@ -287,167 +287,167 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output]"
+                  refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[WWI Employee ID]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[WWI Employee ID]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].ExternalColumns[WWI Employee ID]"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[WWI Employee ID]"
+                      externalMetadataColumnId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].ExternalColumns[WWI Employee ID]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[WWI Employee ID]"
                       name="WWI Employee ID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Employee]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Employee]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].ExternalColumns[Employee]"
+                      externalMetadataColumnId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].ExternalColumns[Employee]"
                       length="50"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Employee]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Employee]"
                       name="Employee"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Preferred Name]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Preferred Name]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].ExternalColumns[Preferred Name]"
+                      externalMetadataColumnId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].ExternalColumns[Preferred Name]"
                       length="50"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Preferred Name]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Preferred Name]"
                       name="Preferred Name"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Photo]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Photo]"
                       dataType="image"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].ExternalColumns[Photo]"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Photo]"
+                      externalMetadataColumnId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].ExternalColumns[Photo]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Photo]"
                       name="Photo"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Valid From]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Valid From]"
                       dataType="dbTimeStamp2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].ExternalColumns[Valid From]"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Valid From]"
+                      externalMetadataColumnId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].ExternalColumns[Valid From]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Valid From]"
                       name="Valid From"
                       scale="7"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Valid To]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Valid To]"
                       dataType="dbTimeStamp2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].ExternalColumns[Valid To]"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Valid To]"
+                      externalMetadataColumnId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].ExternalColumns[Valid To]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Valid To]"
                       name="Valid To"
                       scale="7"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Is Salesperson]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Is Salesperson]"
                       dataType="bool"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].ExternalColumns[Is Salesperson]"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].Columns[Is Salesperson]"
+                      externalMetadataColumnId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].ExternalColumns[Is Salesperson]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].Columns[Is Salesperson]"
                       name="Is Salesperson"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].ExternalColumns[WWI Employee ID]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].ExternalColumns[WWI Employee ID]"
                       dataType="i4"
                       name="WWI Employee ID" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].ExternalColumns[Employee]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].ExternalColumns[Employee]"
                       dataType="wstr"
                       length="50"
                       name="Employee" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].ExternalColumns[Preferred Name]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].ExternalColumns[Preferred Name]"
                       dataType="wstr"
                       length="50"
                       name="Preferred Name" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].ExternalColumns[Photo]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].ExternalColumns[Photo]"
                       dataType="image"
                       name="Photo" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].ExternalColumns[Valid From]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].ExternalColumns[Valid From]"
                       dataType="dbTimeStamp2"
                       name="Valid From"
                       scale="7" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].ExternalColumns[Valid To]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].ExternalColumns[Valid To]"
                       dataType="dbTimeStamp2"
                       name="Valid To"
                       scale="7" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output].ExternalColumns[Is Salesperson]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output].ExternalColumns[Is Salesperson]"
                       dataType="bool"
                       name="Is Salesperson" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output]"
+                  refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[WWI Employee ID]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[WWI Employee ID]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[WWI Employee ID]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[WWI Employee ID]"
                       name="WWI Employee ID" />
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[Employee]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[Employee]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[Employee]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[Employee]"
                       name="Employee" />
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[Preferred Name]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[Preferred Name]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[Preferred Name]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[Preferred Name]"
                       name="Preferred Name" />
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[Is Salesperson]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[Is Salesperson]"
                       dataType="bool"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[Is Salesperson]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[Is Salesperson]"
                       name="Is Salesperson" />
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[Photo]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[Photo]"
                       dataType="image"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[Photo]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[Photo]"
                       name="Photo" />
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[Valid From]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[Valid From]"
                       dataType="dbTimeStamp2"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[Valid From]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[Valid From]"
                       name="Valid From"
                       scale="7" />
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[Valid To]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[Valid To]"
                       dataType="dbTimeStamp2"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[Valid To]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[Valid To]"
                       name="Valid To"
                       scale="7" />
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -461,7 +461,7 @@
               refId="Package\DFT - Load Employee.Paths[OLE DB Source Output]"
               endId="Package\DFT - Load Employee\DST - Dim_Employee.Inputs[OLE DB Destination Input]"
               name="OLE DB Source Output"
-              startId="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees.Outputs[OLE DB Source Output]" />
+              startId="Package\DFT - Load Employee\SRC - Person Filtered for Employees.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -546,15 +546,15 @@
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="243,42"
-          Id="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees"
-          TopLeft="180,105" />
+          Id="Package\DFT - Load Employee\DST - Dim_Employee"
+          TopLeft="185,194" />
         <NodeLayout
           Size="243,42"
-          Id="Package\DFT - Load Employee\DST - Dim_Employee"
-          TopLeft="180,236" />
+          Id="Package\DFT - Load Employee\SRC - Person Filtered for Employees"
+          TopLeft="185,63" />
         <EdgeLayout
           Id="Package\DFT - Load Employee.Paths[OLE DB Source Output]"
-          TopLeft="301.5,147">
+          TopLeft="306.5,105">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -591,7 +591,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Employee\SRC - Person Filtered for Emplyees">
+    design-time-name="Package\DFT - Load Employee\SRC - Person Filtered for Employees">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

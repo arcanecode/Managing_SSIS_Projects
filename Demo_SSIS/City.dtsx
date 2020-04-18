@@ -12,8 +12,8 @@
   DTS:ObjectName="City"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{D35789EB-AA19-4CFC-AAD5-7F4CC64BB86F}">
+  DTS:VersionBuild="22"
+  DTS:VersionGUID="{51485FF6-A6FF-4BE5-8F76-B5B92AB3F7D7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -1013,34 +1013,34 @@
         <NodeLayout
           Size="318,42"
           Id="Package\DFT - Load Table Dim City"
-          TopLeft="191,483.333333333333" />
+          TopLeft="55,467.333333333333" />
         <NodeLayout
           Size="318,42"
           Id="Package\EXP - Set ExecutionBegan Time"
-          TopLeft="191,60" />
+          TopLeft="55,44" />
         <NodeLayout
           Size="318,42"
           Id="Package\EXP - Set ExecutionEnded Time"
-          TopLeft="191,589.166666666667" />
+          TopLeft="55,573.166666666667" />
         <NodeLayout
           Size="318,42"
           Id="Package\SQL - Insert App-PackageLogger for Package City"
-          TopLeft="191,165.833333333333" />
+          TopLeft="55,149.833333333333" />
         <NodeLayout
           Size="318,42"
           Id="Package\SQL - Truncate Table Dim City"
-          TopLeft="191,271.666666666667" />
+          TopLeft="55,255.666666666667" />
         <NodeLayout
           Size="318,42"
           Id="Package\SQL - Update App-PackageLogger for Package City"
-          TopLeft="191,695" />
+          TopLeft="55,679" />
         <NodeLayout
           Size="318,42"
           Id="Package\SQL - Update Source System Table City"
-          TopLeft="191,377.5" />
+          TopLeft="55,361.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="350,313.666666666667">
+          TopLeft="214,297.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1062,7 +1062,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="350,102">
+          TopLeft="214,86">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1084,7 +1084,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="350,207.833333333333">
+          TopLeft="214,191.833333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1106,7 +1106,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="350,525.333333333333">
+          TopLeft="214,509.333333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1128,7 +1128,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="350,631.166666666667">
+          TopLeft="214,615.166666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1150,7 +1150,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="350,419.5">
+          TopLeft="214,403.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1177,22 +1177,22 @@
     design-time-name="Package\DFT - Load Table Dim City">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="224,42"
           Id="Package\DFT - Load Table Dim City\DST - Dim City"
-          TopLeft="264,287" />
+          TopLeft="70,245" />
         <NodeLayout
           Size="224,42"
           Id="Package\DFT - Load Table Dim City\CNT - Rows Inserted"
-          TopLeft="264,184.5" />
+          TopLeft="70,142.5" />
         <NodeLayout
           Size="224,42"
           Id="Package\DFT - Load Table Dim City\SRC - Integration_CityChanges"
-          TopLeft="264,82" />
+          TopLeft="70,40" />
         <EdgeLayout
           Id="Package\DFT - Load Table Dim City.Paths[Row Count Output 1]"
-          TopLeft="376,226.5">
+          TopLeft="182,184.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1209,14 +1209,12 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load Table Dim City.Paths[OLE DB Source Output]"
-          TopLeft="376,124">
+          TopLeft="182,82">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1233,9 +1231,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

@@ -11,7 +11,7 @@
 7. If you plan to allow automatic execution of SSIS at SQL Server startup, place a check mark beside that option.
 8. Accept the default name of SSISDB for the catalog.
 9. Enter, then retype a password. _Make sure you write this down, or save it in your password manager!_
-10 Accept the remaining defaults, and click the OK button.
+10. Accept the remaining defaults, and click the OK button.
 
 ## Demo 2 - Backup the SSISDB
 
@@ -59,6 +59,7 @@ To backup the encryption key, use the following command:
 USE SSISDB
 GO
 
+-- If the file already exists you will get an error!
 BACKUP MASTER KEY TO FILE = 'c:\temp\DemoTestKey'  
   ENCRYPTION BY PASSWORD = 'SecureP@ssW0rd'  
 GO

@@ -12,8 +12,8 @@
   DTS:ObjectName="EmployeePP"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{A1F19CB4-21C7-4A1B-B777-EBA63778A7A1}">
+  DTS:VersionBuild="43"
+  DTS:VersionGUID="{E75DB7F8-7189-4E26-B0C5-791827ED9883}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers />
@@ -608,7 +608,7 @@
       DTS:ObjectName="InsertExecutionBegan">
       <DTS:ObjectData>
         <PackagePart:InstanceData xmlns:PackagePart="www.microsoft.com/SqlServer/Dts/PackagePart"
-          PackagePart:VersionGUID="{7ED92E85-96BA-4F57-B21B-FD814B0C17E7}">
+          PackagePart:VersionGUID="{B50FAA34-D2CB-410E-8E89-E2207C0082C3}">
           <PackagePart:Connections>
             <PackagePart:Connection
               PackagePart:ID="{019F5FF0-3B23-4D60-B2DB-BD0D77D1B00B}"
@@ -623,7 +623,37 @@
               <PackagePart:Path>.Properties[Connection]</PackagePart:Path>
               <PackagePart:Value
                 IsSensitive="false"
-                ValueType="String">localhost.TargetDB_Dev</PackagePart:Value>
+                ValueType="String">(PackagePart)localhost.TargetDB_Dev</PackagePart:Value>
+            </PackagePart:Configuration>
+            <PackagePart:Configuration>
+              <PackagePart:Path>.Variables[User::IEB_DataFlowName].Properties[Expression]</PackagePart:Path>
+              <PackagePart:Value
+                IsSensitive="false"
+                ValueType="String">@[User::DataFlowName]</PackagePart:Value>
+            </PackagePart:Configuration>
+            <PackagePart:Configuration>
+              <PackagePart:Path>.Variables[User::IEB_ExecutionBegan].Properties[Expression]</PackagePart:Path>
+              <PackagePart:Value
+                IsSensitive="false"
+                ValueType="String">@[User::ExecutionBegan]</PackagePart:Value>
+            </PackagePart:Configuration>
+            <PackagePart:Configuration>
+              <PackagePart:Path>.Variables[User::IEB_PackageName].Properties[Expression]</PackagePart:Path>
+              <PackagePart:Value
+                IsSensitive="false"
+                ValueType="String">@[User::PackageName]</PackagePart:Value>
+            </PackagePart:Configuration>
+            <PackagePart:Configuration>
+              <PackagePart:Path>.Variables[User::IEB_RuntimeEnvironment].Properties[Expression]</PackagePart:Path>
+              <PackagePart:Value
+                IsSensitive="false"
+                ValueType="String">@[$Project::RuntimeEnvironment]</PackagePart:Value>
+            </PackagePart:Configuration>
+            <PackagePart:Configuration>
+              <PackagePart:Path>.Variables[User::IEB_SubflowInformation].Properties[Expression]</PackagePart:Path>
+              <PackagePart:Value
+                IsSensitive="false"
+                ValueType="String">@[User::SubflowInformation]</PackagePart:Value>
             </PackagePart:Configuration>
           </PackagePart:Configurations>
         </PackagePart:InstanceData>
@@ -649,10 +679,58 @@
           </PackagePart:Connections>
           <PackagePart:Configurations>
             <PackagePart:Configuration>
+              <PackagePart:Path>.Variables[User::IEE_DataFlowName].Properties[Expression]</PackagePart:Path>
+              <PackagePart:Value
+                IsSensitive="false"
+                ValueType="String">@[User::DataFlowName]</PackagePart:Value>
+            </PackagePart:Configuration>
+            <PackagePart:Configuration>
+              <PackagePart:Path>.Variables[User::IEE_ExecutionBegan].Properties[Expression]</PackagePart:Path>
+              <PackagePart:Value
+                IsSensitive="false"
+                ValueType="String">@[User::ExecutionBegan]</PackagePart:Value>
+            </PackagePart:Configuration>
+            <PackagePart:Configuration>
+              <PackagePart:Path>.Variables[User::IEE_PackageName].Properties[Expression]</PackagePart:Path>
+              <PackagePart:Value
+                IsSensitive="false"
+                ValueType="String">@[User::PackageName]</PackagePart:Value>
+            </PackagePart:Configuration>
+            <PackagePart:Configuration>
+              <PackagePart:Path>.Variables[User::IEE_RowsDeleted].Properties[Expression]</PackagePart:Path>
+              <PackagePart:Value
+                IsSensitive="false"
+                ValueType="String">@[User::RowsDeleted]</PackagePart:Value>
+            </PackagePart:Configuration>
+            <PackagePart:Configuration>
+              <PackagePart:Path>.Variables[User::IEE_RowsInserted].Properties[Expression]</PackagePart:Path>
+              <PackagePart:Value
+                IsSensitive="false"
+                ValueType="String">@[User::RowsInserted]</PackagePart:Value>
+            </PackagePart:Configuration>
+            <PackagePart:Configuration>
+              <PackagePart:Path>.Variables[User::IEE_RowsUnaffected].Properties[Expression]</PackagePart:Path>
+              <PackagePart:Value
+                IsSensitive="false"
+                ValueType="String">@[User::RowsUnaffected]</PackagePart:Value>
+            </PackagePart:Configuration>
+            <PackagePart:Configuration>
+              <PackagePart:Path>.Variables[User::IEE_RowsUpdated].Properties[Expression]</PackagePart:Path>
+              <PackagePart:Value
+                IsSensitive="false"
+                ValueType="String">@[User::RowsUpdated]</PackagePart:Value>
+            </PackagePart:Configuration>
+            <PackagePart:Configuration>
+              <PackagePart:Path>.Variables[User::IEE_SubFlowInformation].Properties[Expression]</PackagePart:Path>
+              <PackagePart:Value
+                IsSensitive="false"
+                ValueType="String">@[User::SubflowInformation]</PackagePart:Value>
+            </PackagePart:Configuration>
+            <PackagePart:Configuration>
               <PackagePart:Path>\SQL - Update App-PackageLogger for Package.Properties[Connection]</PackagePart:Path>
               <PackagePart:Value
                 IsSensitive="false"
-                ValueType="String">localhost.TargetDB_Dev</PackagePart:Value>
+                ValueType="String">(PackagePart)localhost.TargetDB_Dev 1</PackagePart:Value>
             </PackagePart:Configuration>
           </PackagePart:Configurations>
         </PackagePart:InstanceData>
@@ -687,29 +765,29 @@
       DTS:ObjectName="Constraint 2"
       DTS:To="Package\DFT - Load Table Dim Employee" />
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[{3362BCB1-2939-4730-B4B8-E4FF1C6FB0EB\}]"
+      DTS:refId="Package.PrecedenceConstraints[{11AB191D-826C-4092-A322-105BDE65DD23\}]"
       DTS:CreationName=""
       DTS:DTSID="{5EB3971E-8083-4D85-BF39-2855913431C5}"
       DTS:From="Package\InsertExecutionBegan"
       DTS:LogicalAnd="True"
-      DTS:ObjectName="{3362BCB1-2939-4730-B4B8-E4FF1C6FB0EB}"
+      DTS:ObjectName="{11AB191D-826C-4092-A322-105BDE65DD23}"
       DTS:To="Package\SQL - Truncate Table Dim Employee" />
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[{388789DE-B1E2-413C-8126-922830CD880D\}]"
-      DTS:CreationName=""
-      DTS:DTSID="{96EEB9D4-9C1E-4181-8C7E-3CA6FA870A1D}"
-      DTS:From="Package\DFT - Load Table Dim Employee"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="{388789DE-B1E2-413C-8126-922830CD880D}"
-      DTS:To="Package\InsertExecutionEnded" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[{A5803C0C-BBC9-41DD-A2EB-105C73295FEA\}]"
+      DTS:refId="Package.PrecedenceConstraints[{DC47E7FC-0F14-4D25-9DD0-8D4D81B3FD77\}]"
       DTS:CreationName=""
       DTS:DTSID="{AAC5045D-67BA-4D5C-8DB5-63D2D348DEB8}"
       DTS:From="Package\EXP - Set ExecutionBegan Time"
       DTS:LogicalAnd="True"
-      DTS:ObjectName="{A5803C0C-BBC9-41DD-A2EB-105C73295FEA}"
+      DTS:ObjectName="{DC47E7FC-0F14-4D25-9DD0-8D4D81B3FD77}"
       DTS:To="Package\InsertExecutionBegan" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[{E085633F-5CD1-4B48-B634-4BAC4D1A5732\}]"
+      DTS:CreationName=""
+      DTS:DTSID="{96EEB9D4-9C1E-4181-8C7E-3CA6FA870A1D}"
+      DTS:From="Package\DFT - Load Table Dim Employee"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="{E085633F-5CD1-4B48-B634-4BAC4D1A5732}"
+      DTS:To="Package\InsertExecutionEnded" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -791,7 +869,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[{3362BCB1-2939-4730-B4B8-E4FF1C6FB0EB\}]"
+          Id="Package.PrecedenceConstraints[{11AB191D-826C-4092-A322-105BDE65DD23\}]"
           TopLeft="159.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -813,8 +891,8 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[{A5803C0C-BBC9-41DD-A2EB-105C73295FEA\}]"
-          TopLeft="159.5,47.5">
+          Id="Package.PrecedenceConstraints[{E085633F-5CD1-4B48-B634-4BAC4D1A5732\}]"
+          TopLeft="159.5,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -835,8 +913,8 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[{388789DE-B1E2-413C-8126-922830CD880D\}]"
-          TopLeft="159.5,353.5">
+          Id="Package.PrecedenceConstraints[{DC47E7FC-0F14-4D25-9DD0-8D4D81B3FD77\}]"
+          TopLeft="159.5,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -863,7 +941,7 @@
     design-time-name="Package\DFT - Load Table Dim Employee">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="177,42"
           Id="Package\DFT - Load Table Dim Employee\DST - Dim Employee"
@@ -895,7 +973,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -917,28 +997,30 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <AnnotationLayout
           Text="Start with the OLEDB Source"
           ParentId="Package\DFT - Load Table Dim Employee"
           FontInfo="{assembly:Null}"
-          Size="199,40"
+          Size="199,NaN"
           Id="99c0b37b-dc17-484e-90d7-d27feb06d0d5"
           TopLeft="559,89" />
         <AnnotationLayout
           Text="Add a RowCount and assign to RowsInserted"
           ParentId="Package\DFT - Load Table Dim Employee"
           FontInfo="{assembly:Null}"
-          Size="266,40"
+          Size="266,NaN"
           Id="6073360e-cf2d-42a8-aad0-16404f298c88"
           TopLeft="559,189.5" />
         <AnnotationLayout
           Text="End with OLEDB Destination"
           ParentId="Package\DFT - Load Table Dim Employee"
           FontInfo="{assembly:Null}"
-          Size="178,40"
+          Size="178,NaN"
           Id="3aa2c84a-2580-47b9-9037-f101262a5ecc"
           TopLeft="559,290" />
       </GraphLayout>

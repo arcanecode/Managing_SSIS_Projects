@@ -51,6 +51,20 @@ The other option is for custom SSIS logging, however this can be a bit complex t
 
 ## Demo 4 - Querying the logs
 
+Summarize the list of views used, this table is also in the PowerPoint.
+
+|View|Purpose|
+|---|---|
+|catalog.folders|Provides a list of folders directly under Integration Services Catalogs\SSISDB|
+|catalog.projects|Lists projects found in the catalog|
+|catalog.packages|Lists packages found in the SSISDB|
+|catalog.executions|A log of each execution of a package|
+|catalog.executables|Each task at the control flow level is considered an "executable", and are listed in this view|
+|catalog.event_messages|A record of the list of messages logged during package execution|
+
+
+
+
 1. Start the demo with SSISDB database expanded to the views.
 2. Close any open tabs.
 3. Open the Monitor_SSIS_Projects SSMS solution in SSMS. (Note, this solution file is not included in the demos, but the scripts are.)

@@ -23,8 +23,11 @@
 5. Note how a control that is a package part has a little P in the upper right corner.
 6. Click on it to show the variables for the part.
 7. Note how each variable in the package part is mapped to a package variable through an expression.
-8. Open one of the variables expression properties, and show how it is mapped by dragging and dropping the variable name to the expression.
-9. As a final task in this package we have another package part, but this appears to have two controls in it, contrary to what was stated earlier about a part only having one control. Let's take a look at how we accomplished this.
+8. Mention you cannot edit the variable expressions in the normal way. Instead you have to alter them via the properties. 
+9. Right click on the package part, then pick Edit.
+10. Scroll down to show each variable, that a check mark is beside expression, and show the expressions to the right.
+11. While here, show the mapping from the package connection string to the package part connection string.
+12. As a final task in this package we have another package part, but this appears to have two controls in it, contrary to what was stated earlier about a part only having one control. Let's take a look at how we accomplished this.
 
 ## Demo 3 - InsertExecutionEnded Package Part
 

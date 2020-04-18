@@ -6,7 +6,7 @@
 2. Right click on Environments
 3. Select _Create Environment_ in the menu.
 4. In the dialog give it the name __Prod__.
-5. Provide a description, such as __Production Variables__.
+5. Provide a description, such as __Production Configuration__.
 6. Click __OK__ to create the environment.
 
 ## Demo 2 - Add variables to the Environment
@@ -25,8 +25,8 @@
 
 | Name | Type | Description | Value |
 | --- | --- | --- | --- |
-|ConnectonStr | String | Connection String |Data Source=localhost;Initial Catalog=TargetDB_Prod;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;|
-|InitCatalog |String |Initial Catalog (database) |TargetDB_Prod |
+|TargetConnectonStr | String | Target DB Connection String |Data Source=localhost;Initial Catalog=TargetDB_Prod;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;|
+|TargetInitCatalog |String |Initial Target Catalog (database) |TargetDB_Prod |
 
 ## Demo 3 - Configure the Project to use Environment Variables
 
@@ -65,11 +65,11 @@ Offscreen, create the new environments with the following values.
 |New Environment Name| Name | Type | Description | Value |
 | --- | --- | --- | --- | --- |
 | Test |RuntimeEnv |String |Runtime Environment Name |Test |
-| Test |ConnectonStr | String | Connection String |Data Source=localhost;Initial Catalog=TargetDB_Test;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;|
-| Test |InitCatalog |String |Initial Catalog (database) |TargetDB_Test |
+| Test |TargetConnectonStr | String | Connection String |Data Source=localhost;Initial Catalog=TargetDB_Test;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;|
+| Test |TargetInitCatalog |String |Initial Catalog (database) |TargetDB_Test |
 | Dev |RuntimeEnv |String |Runtime Environment Name |Dev |
-| Dev |ConnectonStr | String | Connection String |Data Source=localhost;Initial Catalog=TargetDB_Dev;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;|
-| Dev |InitCatalog |String |Initial Catalog (database) |TargetDB_Dev |
+| Dev |TargetConnectonStr | String | Connection String |Data Source=localhost;Initial Catalog=TargetDB_Dev;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;|
+| Dev |TargetInitCatalog |String |Initial Catalog (database) |TargetDB_Dev |
 
 ## Demo 5 - Execute using an alternate environment
 
