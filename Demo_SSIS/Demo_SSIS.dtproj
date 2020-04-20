@@ -688,7 +688,12 @@
       <FullPath>InsertExecutionEnded.dtsxp</FullPath>
     </ProjectItem>
   </ControlFlowParts>
-  <Miscellaneous />
+  <Miscellaneous>
+    <ProjectItem>
+      <Name>ReadMe.md</Name>
+      <FullPath>ReadMe.md</FullPath>
+    </ProjectItem>
+  </Miscellaneous>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
